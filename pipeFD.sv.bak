@@ -1,0 +1,10 @@
+module pipeFD(input logic clk,input logic [31:0] RD1D,RD2D, ExtendD, output logic [31:0] RD1E,RD2E, ExtendE);
+
+	always_ff @(posedge clk)
+	begin
+	RD1E <= RD1D;
+	RD2E <= RD2D;
+	ExtendE <= ExtendD;
+	end
+
+endmodule

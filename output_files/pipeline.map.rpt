@@ -1,0 +1,1095 @@
+Analysis & Synthesis report for pipeline
+Fri Sep 28 11:00:30 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1
+ 12. Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0
+ 13. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1
+ 14. Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux
+ 15. Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2
+ 16. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux
+ 17. Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux
+ 18. Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux
+ 19. Parameter Settings for User Entity Instance: datapath:dp|alu:alu
+ 20. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|andNBits:AND
+ 21. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|orNBits:OR
+ 22. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|addNBits:ADD
+ 23. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|subtractNBits:SUB
+ 24. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux4x1:MUX
+ 25. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroFlag:zf
+ 26. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|negativeFlag:nf
+ 27. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|carryFlag:cf
+ 28. Parameter Settings for User Entity Instance: datapath:dp|alu:alu|overflowFlag:vf
+ 29. Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux
+ 30. Port Connectivity Checks: "datapath:dp|pipeMW:pipelineMW"
+ 31. Port Connectivity Checks: "datapath:dp|pipeEM:pipelineEM"
+ 32. Port Connectivity Checks: "datapath:dp|alu:alu|subtractNBits:SUB"
+ 33. Port Connectivity Checks: "datapath:dp|alu:alu|addNBits:ADD"
+ 34. Port Connectivity Checks: "datapath:dp|mux2:srcbmux"
+ 35. Port Connectivity Checks: "datapath:dp|pipeDE:pipelineDE"
+ 36. Port Connectivity Checks: "datapath:dp|mux2:ra1mux"
+ 37. Port Connectivity Checks: "datapath:dp|adder:pcadd2"
+ 38. Port Connectivity Checks: "datapath:dp|pipePC:pipelinePC"
+ 39. Port Connectivity Checks: "datapath:dp|mux2:pcmux"
+ 40. Port Connectivity Checks: "datapath:dp|pipeFD:pipelineFD"
+ 41. Port Connectivity Checks: "datapath:dp|adder:pcadd1"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
+ 45. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Sep 28 11:00:30 2018       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; pipeline                                    ;
+; Top-level Entity Name              ; arm                                         ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 131                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                            ; arm                ; pipeline           ;
+; Family name                                                      ; Cyclone IV GX      ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/flopenr.sv        ;         ;
+; condcheck.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/condcheck.sv      ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/decoder.sv        ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/condlogic.sv      ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/controller.sv     ;         ;
+; arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv            ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/mux2.sv           ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/extend.sv         ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/adder.sv          ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv       ;         ;
+; zeroFlag.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/zeroFlag.sv       ;         ;
+; xorOneBit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/xorOneBit.sv      ;         ;
+; subtractOneBit.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/subtractOneBit.sv ;         ;
+; subtractNBits.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/subtractNBits.sv  ;         ;
+; overflowFlag.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/overflowFlag.sv   ;         ;
+; orOneBit.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/orOneBit.sv       ;         ;
+; orNBits.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/orNBits.sv        ;         ;
+; notOneBit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/notOneBit.sv      ;         ;
+; negativeFlag.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/negativeFlag.sv   ;         ;
+; mux4x1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/mux4x1.sv         ;         ;
+; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv           ;         ;
+; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/dmem.sv           ;         ;
+; carryFlag.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/carryFlag.sv      ;         ;
+; andOneBit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/andOneBit.sv      ;         ;
+; andNBits.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/andNBits.sv       ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv            ;         ;
+; addOneBit.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/addOneBit.sv      ;         ;
+; addNBits.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/addNBits.sv       ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/regfile.sv        ;         ;
+; pipeDE.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/pipeDE.sv         ;         ;
+; pipeEM.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/pipeEM.sv         ;         ;
+; pipeFD.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/pipeFD.sv         ;         ;
+; pipeMW.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/pipeMW.sv         ;         ;
+; pipePC.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Jairo/Desktop/ProyectoArqui/pipePC.sv         ;         ;
+; memfile.dat                      ; yes             ; Auto-Found Unspecified File  ; C:/Users/Jairo/Desktop/ProyectoArqui/memfile.dat       ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+
+
++---------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary ;
++--------------------------+------------------+
+; Resource                 ; Usage            ;
++--------------------------+------------------+
+; I/O pins                 ; 131              ;
+;                          ;                  ;
+; DSP block 9-bit elements ; 0                ;
+;                          ;                  ;
+; Maximum fan-out node     ; PCF[0]~output    ;
+; Maximum fan-out          ; 1                ;
+; Total fan-out            ; 131              ;
+; Average fan-out          ; 0.50             ;
++--------------------------+------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+; |arm                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0         ; 131  ; 0            ; |arm                ; arm         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++---------------------------------------------------+---------------------------------------------+
+; Register name                                     ; Reason for Removal                          ;
++---------------------------------------------------+---------------------------------------------+
+; datapath:dp|pipeEM:pipelineEM|resultE[0..31]      ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|resultD[0..31]      ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipePC:pipelinePC|PCF[1..31]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|resultF[0]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|pcD[1]              ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|pcD[2]              ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|pcD[3..31]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipePC:pipelinePC|PCF[0]              ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|pcD[0]              ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|ExtendE[0]          ; Lost fanout                                 ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[3,16..19]    ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[15]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[2]           ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[14]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[1]           ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[13]          ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[0]           ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeFD:pipelineFD|InstrD[12]          ; Stuck at GND due to stuck port data_in      ;
+; controller:c|condlogic:cl|flopenr:flagreg1|q[1]   ; Stuck at GND due to stuck port clock_enable ;
+; controller:c|condlogic:cl|flopenr:flagreg0|q[0,1] ; Stuck at GND due to stuck port clock_enable ;
+; controller:c|condlogic:cl|flopenr:flagreg1|q[0]   ; Stuck at GND due to stuck port clock_enable ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[0]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[0]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[1]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[1]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[2]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[2]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[3]             ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[3]             ; Stuck at VCC due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[4]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[4]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[5]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[5]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[6]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[6]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[7]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[7]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[8]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[8]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[9]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[9]             ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[10]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[10]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[11]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[11]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[12]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[12]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[13]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[13]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[14]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[14]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[15]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[15]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[16]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[16]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[17]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[17]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[18]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[18]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[19]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[19]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[20]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[20]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[21]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[21]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[22]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[22]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[23]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[23]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[24]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[24]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[25]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[25]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[26]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[26]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[27]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[27]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[28]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[28]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[29]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[29]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[30]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[30]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD1E[31]            ; Stuck at GND due to stuck port data_in      ;
+; datapath:dp|pipeDE:pipelineDE|RD2E[31]            ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 210           ;                                             ;
++---------------------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                             ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; datapath:dp|pipePC:pipelinePC|PCF[2]      ; Stuck at GND              ; datapath:dp|pipeFD:pipelineFD|InstrD[3], datapath:dp|pipeFD:pipelineFD|InstrD[2],   ;
+;                                           ; due to stuck port data_in ; datapath:dp|pipeFD:pipelineFD|InstrD[1], datapath:dp|pipeFD:pipelineFD|InstrD[0],   ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[2], datapath:dp|pipeDE:pipelineDE|RD2E[3],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[4], datapath:dp|pipeDE:pipelineDE|RD2E[5],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[6], datapath:dp|pipeDE:pipelineDE|RD2E[7],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[8], datapath:dp|pipeDE:pipelineDE|RD2E[9],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[10], datapath:dp|pipeDE:pipelineDE|RD2E[11],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[12], datapath:dp|pipeDE:pipelineDE|RD2E[13],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[14], datapath:dp|pipeDE:pipelineDE|RD2E[15],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[16], datapath:dp|pipeDE:pipelineDE|RD2E[17],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[18], datapath:dp|pipeDE:pipelineDE|RD2E[19],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[20], datapath:dp|pipeDE:pipelineDE|RD2E[21],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[22], datapath:dp|pipeDE:pipelineDE|RD2E[23]      ;
+; datapath:dp|pipeFD:pipelineFD|pcD[1]      ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|RD2E[1], datapath:dp|pipeDE:pipelineDE|RD1E[24],      ;
+;                                           ; due to stuck port data_in ; datapath:dp|pipeDE:pipelineDE|RD2E[24], datapath:dp|pipeDE:pipelineDE|RD1E[25],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[25], datapath:dp|pipeDE:pipelineDE|RD1E[26],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[26], datapath:dp|pipeDE:pipelineDE|RD1E[27],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[27], datapath:dp|pipeDE:pipelineDE|RD1E[28],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[28], datapath:dp|pipeDE:pipelineDE|RD1E[29],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[29], datapath:dp|pipeDE:pipelineDE|RD1E[30],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[30], datapath:dp|pipeDE:pipelineDE|RD1E[31],     ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD2E[31]                                              ;
+; datapath:dp|pipeEM:pipelineEM|resultE[0]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[0], datapath:dp|pipeFD:pipelineFD|resultF[0], ;
+;                                           ; due to stuck port data_in ; datapath:dp|pipePC:pipelinePC|PCF[0], datapath:dp|pipeFD:pipelineFD|pcD[0],         ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD1E[0], datapath:dp|pipeDE:pipelineDE|RD2E[0],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD1E[1], datapath:dp|pipeDE:pipelineDE|RD1E[2],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD1E[3], datapath:dp|pipeDE:pipelineDE|RD1E[4],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD1E[5], datapath:dp|pipeDE:pipelineDE|RD1E[6],       ;
+;                                           ;                           ; datapath:dp|pipeDE:pipelineDE|RD1E[7]                                               ;
+; datapath:dp|pipePC:pipelinePC|PCF[1]      ; Stuck at GND              ; datapath:dp|pipeFD:pipelineFD|pcD[23], datapath:dp|pipeFD:pipelineFD|pcD[24],       ;
+;                                           ; due to stuck port data_in ; datapath:dp|pipeFD:pipelineFD|pcD[25], datapath:dp|pipeFD:pipelineFD|pcD[26],       ;
+;                                           ;                           ; datapath:dp|pipeFD:pipelineFD|pcD[27], datapath:dp|pipeFD:pipelineFD|pcD[28],       ;
+;                                           ;                           ; datapath:dp|pipeFD:pipelineFD|pcD[29], datapath:dp|pipeFD:pipelineFD|pcD[30],       ;
+;                                           ;                           ; datapath:dp|pipeFD:pipelineFD|pcD[31]                                               ;
+; datapath:dp|pipeEM:pipelineEM|resultE[1]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[1]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[2]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[2]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[3]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[3]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[4]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[4]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[5]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[5]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[6]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[6]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[7]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[7]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[8]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[8]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[9]  ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[9]                                            ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[10] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[10]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[11] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[11]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[12] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[12]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[13] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[13]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[14] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[14]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[15] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[15]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[18] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[18]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[19] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[19]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[20] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[20]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[21] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[21]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[22] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[22]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[23] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[23]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[24] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[24]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[25] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[25]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[26] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[26]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[27] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[27]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[28] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[28]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[29] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[29]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[30] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[30]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[31] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[31]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[16] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[16]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
+; datapath:dp|pipeEM:pipelineEM|resultE[17] ; Stuck at GND              ; datapath:dp|pipeDE:pipelineDE|resultD[17]                                           ;
+;                                           ; due to stuck port data_in ;                                                                                     ;
++-------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd1 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|mux2:pcmux ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|adder:pcadd2 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|mux2:ra1mux ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|mux2:ra2mux ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|mux2:srcbmux ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; bits           ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|andNBits:AND ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|orNBits:OR ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|addNBits:ADD ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|subtractNBits:SUB ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|mux4x1:MUX ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|zeroFlag:zf ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|negativeFlag:nf ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|carryFlag:cf ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|alu:alu|overflowFlag:vf ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:dp|mux2:resmux ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|pipeMW:pipelineMW"                                                                                                  ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                      ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; resultM ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "resultM[31..1]" have no fanouts ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|pipeEM:pipelineEM"                                                                                                                      ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                           ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+; resultM ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "resultM[31..1]" will be connected to GND. ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|alu:alu|subtractNBits:SUB" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                            ;
++------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|alu:alu|addNBits:ADD" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|mux2:srcbmux"                                                                                                                   ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; d1   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "d1[31..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|pipeDE:pipelineDE"                                                                                                  ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                      ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; ExtendE ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "ExtendE[31..1]" have no fanouts ;
++---------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|mux2:ra1mux" ;
++------+-------+----------+---------------------------+
+; Port ; Type  ; Severity ; Details                   ;
++------+-------+----------+---------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC              ;
++------+-------+----------+---------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|adder:pcadd2" ;
++----------+-------+----------+------------------------+
+; Port     ; Type  ; Severity ; Details                ;
++----------+-------+----------+------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC           ;
++----------+-------+----------+------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|pipePC:pipelinePC"                                                                                                              ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; PC   ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "PC[31..1]" will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|mux2:pcmux"                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+; y    ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "y[31..1]" have no fanouts ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|pipeFD:pipelineFD"                                                                ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; InstrD[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "datapath:dp|adder:pcadd1" ;
++----------+-------+----------+------------------------+
+; Port     ; Type  ; Severity ; Details                ;
++----------+-------+----------+------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND           ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND           ;
+; b[2]     ; Input ; Info     ; Stuck at VCC           ;
++----------+-------+----------+------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 131                         ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Fri Sep 28 11:00:10 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipeline -c pipeline
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/Jairo/Desktop/ProyectoArqui/flopenr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
+    Info (12023): Found entity 1: condcheck File: C:/Users/Jairo/Desktop/ProyectoArqui/condcheck.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/Jairo/Desktop/ProyectoArqui/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
+    Info (12023): Found entity 1: condlogic File: C:/Users/Jairo/Desktop/ProyectoArqui/condlogic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/Jairo/Desktop/ProyectoArqui/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
+    Info (12023): Found entity 1: arm File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2 File: C:/Users/Jairo/Desktop/ProyectoArqui/mux2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/Users/Jairo/Desktop/ProyectoArqui/flopr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: extend File: C:/Users/Jairo/Desktop/ProyectoArqui/extend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/Jairo/Desktop/ProyectoArqui/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file zeroflag.sv
+    Info (12023): Found entity 1: zeroFlag File: C:/Users/Jairo/Desktop/ProyectoArqui/zeroFlag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xoronebit.sv
+    Info (12023): Found entity 1: xorOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/xorOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file xornbits.sv
+    Info (12023): Found entity 1: xorNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/xorNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subtractonebit.sv
+    Info (12023): Found entity 1: subtractOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/subtractOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file subtractnbits.sv
+    Info (12023): Found entity 1: subtractNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/subtractNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file shiftleftnbits.sv
+    Info (12023): Found entity 1: shiftLeftNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/shiftLeftNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file overflowflag.sv
+    Info (12023): Found entity 1: overflowFlag File: C:/Users/Jairo/Desktop/ProyectoArqui/overflowFlag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file oronebit.sv
+    Info (12023): Found entity 1: orOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/orOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ornbits.sv
+    Info (12023): Found entity 1: orNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/orNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file notonebit.sv
+    Info (12023): Found entity 1: notOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/notOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file notnbits.sv
+    Info (12023): Found entity 1: notNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/notNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file negativeflag.sv
+    Info (12023): Found entity 1: negativeFlag File: C:/Users/Jairo/Desktop/ProyectoArqui/negativeFlag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux4x1.sv
+    Info (12023): Found entity 1: mux4x1 File: C:/Users/Jairo/Desktop/ProyectoArqui/mux4x1.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
+    Info (12023): Found entity 1: imem File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
+    Info (12023): Found entity 1: dmem File: C:/Users/Jairo/Desktop/ProyectoArqui/dmem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file carryflag.sv
+    Info (12023): Found entity 1: carryFlag File: C:/Users/Jairo/Desktop/ProyectoArqui/carryFlag.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file andonebit.sv
+    Info (12023): Found entity 1: andOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/andOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file andnbits.sv
+    Info (12023): Found entity 1: andNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/andNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file addonebit.sv
+    Info (12023): Found entity 1: addOneBit File: C:/Users/Jairo/Desktop/ProyectoArqui/addOneBit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file addnbits.sv
+    Info (12023): Found entity 1: addNBits File: C:/Users/Jairo/Desktop/ProyectoArqui/addNBits.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/Jairo/Desktop/ProyectoArqui/regfile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipede.sv
+    Info (12023): Found entity 1: pipeDE File: C:/Users/Jairo/Desktop/ProyectoArqui/pipeDE.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipeem.sv
+    Info (12023): Found entity 1: pipeEM File: C:/Users/Jairo/Desktop/ProyectoArqui/pipeEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipefd.sv
+    Info (12023): Found entity 1: pipeFD File: C:/Users/Jairo/Desktop/ProyectoArqui/pipeFD.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipemw.sv
+    Info (12023): Found entity 1: pipeMW File: C:/Users/Jairo/Desktop/ProyectoArqui/pipeMW.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipepc.sv
+    Info (12023): Found entity 1: pipePC File: C:/Users/Jairo/Desktop/ProyectoArqui/pipePC.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at datapath.sv(23): created implicit net for "PC" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at datapath.sv(32): created implicit net for "ExtImmE" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 32
+Warning (10236): Verilog HDL Implicit Net warning at datapath.sv(37): created implicit net for "resultM" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 37
+Info (12127): Elaborating entity "arm" for the top level hierarchy
+Info (12128): Elaborating entity "controller" for hierarchy "controller:c" File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 14
+Info (12128): Elaborating entity "decoder" for hierarchy "controller:c|decoder:dec" File: C:/Users/Jairo/Desktop/ProyectoArqui/controller.sv Line: 16
+Info (12128): Elaborating entity "condlogic" for hierarchy "controller:c|condlogic:cl" File: C:/Users/Jairo/Desktop/ProyectoArqui/controller.sv Line: 20
+Info (12128): Elaborating entity "flopenr" for hierarchy "controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/Jairo/Desktop/ProyectoArqui/condlogic.sv Line: 14
+Info (12128): Elaborating entity "condcheck" for hierarchy "controller:c|condlogic:cl|condcheck:cc" File: C:/Users/Jairo/Desktop/ProyectoArqui/condlogic.sv Line: 21
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:dp" File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 18
+Info (12128): Elaborating entity "imem" for hierarchy "datapath:dp|imem:imem" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 20
+Warning (10850): Verilog HDL warning at imem.sv(7): number of words (23) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 7
+Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 4
+Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 4
+Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 4
+Info (12128): Elaborating entity "adder" for hierarchy "datapath:dp|adder:pcadd1" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 21
+Info (12128): Elaborating entity "pipeFD" for hierarchy "datapath:dp|pipeFD:pipelineFD" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:pcmux" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 23
+Info (12128): Elaborating entity "pipePC" for hierarchy "datapath:dp|pipePC:pipelinePC" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 24
+Info (12128): Elaborating entity "mux2" for hierarchy "datapath:dp|mux2:ra1mux" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 28
+Info (12128): Elaborating entity "extend" for hierarchy "datapath:dp|extend:ext" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 30
+Info (12128): Elaborating entity "regfile" for hierarchy "datapath:dp|regfile:rf" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 31
+Info (12128): Elaborating entity "pipeDE" for hierarchy "datapath:dp|pipeDE:pipelineDE" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 32
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:dp|alu:alu" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 36
+Info (12128): Elaborating entity "andNBits" for hierarchy "datapath:dp|alu:alu|andNBits:AND" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 32
+Info (12128): Elaborating entity "andOneBit" for hierarchy "datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[0].andO" File: C:/Users/Jairo/Desktop/ProyectoArqui/andNBits.sv Line: 7
+Info (12128): Elaborating entity "orNBits" for hierarchy "datapath:dp|alu:alu|orNBits:OR" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 34
+Info (12128): Elaborating entity "orOneBit" for hierarchy "datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[0].orO" File: C:/Users/Jairo/Desktop/ProyectoArqui/orNBits.sv Line: 8
+Info (12128): Elaborating entity "addNBits" for hierarchy "datapath:dp|alu:alu|addNBits:ADD" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 36
+Info (12128): Elaborating entity "addOneBit" for hierarchy "datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO" File: C:/Users/Jairo/Desktop/ProyectoArqui/addNBits.sv Line: 6
+Info (12128): Elaborating entity "xorOneBit" for hierarchy "datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|xorOneBit:xorp" File: C:/Users/Jairo/Desktop/ProyectoArqui/addOneBit.sv Line: 7
+Info (12128): Elaborating entity "subtractNBits" for hierarchy "datapath:dp|alu:alu|subtractNBits:SUB" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 38
+Info (12128): Elaborating entity "subtractOneBit" for hierarchy "datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo" File: C:/Users/Jairo/Desktop/ProyectoArqui/subtractNBits.sv Line: 7
+Info (12128): Elaborating entity "notOneBit" for hierarchy "datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|notOneBit:notOn" File: C:/Users/Jairo/Desktop/ProyectoArqui/subtractOneBit.sv Line: 8
+Info (12128): Elaborating entity "mux4x1" for hierarchy "datapath:dp|alu:alu|mux4x1:MUX" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 40
+Info (12128): Elaborating entity "zeroFlag" for hierarchy "datapath:dp|alu:alu|zeroFlag:zf" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 43
+Info (12128): Elaborating entity "negativeFlag" for hierarchy "datapath:dp|alu:alu|negativeFlag:nf" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 44
+Info (12128): Elaborating entity "carryFlag" for hierarchy "datapath:dp|alu:alu|carryFlag:cf" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 45
+Info (12128): Elaborating entity "overflowFlag" for hierarchy "datapath:dp|alu:alu|overflowFlag:vf" File: C:/Users/Jairo/Desktop/ProyectoArqui/alu.sv Line: 56
+Info (12128): Elaborating entity "pipeEM" for hierarchy "datapath:dp|pipeEM:pipelineEM" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 37
+Info (12128): Elaborating entity "dmem" for hierarchy "datapath:dp|dmem:dmem" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 40
+Info (12128): Elaborating entity "pipeMW" for hierarchy "datapath:dp|pipeMW:pipelineMW" File: C:/Users/Jairo/Desktop/ProyectoArqui/datapath.sv Line: 41
+Warning (10034): Output port "resultM" at pipeMW.sv(1) has no driver File: C:/Users/Jairo/Desktop/ProyectoArqui/pipeMW.sv Line: 1
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "datapath:dp|imem:imem|RAM" is uninferred due to asynchronous read logic File: C:/Users/Jairo/Desktop/ProyectoArqui/imem.sv Line: 4
+    Info (276007): RAM logic "datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/Jairo/Desktop/ProyectoArqui/regfile.sv Line: 7
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Jairo/Desktop/ProyectoArqui/db/pipeline.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "PCF[0]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[1]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[2]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[3]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[4]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[5]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[6]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[7]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[8]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[9]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[10]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[11]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[12]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[13]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[14]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[15]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[16]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[17]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[18]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[19]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[20]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[21]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[22]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[23]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[24]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[25]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[26]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[27]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[28]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[29]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[30]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "PCF[31]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 2
+    Warning (13410): Pin "InstrF[0]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[1]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[2]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[3]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[4]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[5]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[6]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[7]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[8]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[9]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[10]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[11]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[12]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[13]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[14]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[15]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[16]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[17]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[18]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[19]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[20]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[21]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[22]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[23]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[24]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[25]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[26]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[27]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[28]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[29]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[30]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "InstrF[31]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 3
+    Warning (13410): Pin "MemWrite" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 4
+    Warning (13410): Pin "ALUResultE[0]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[1]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[2]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[3]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[4]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[5]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[6]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[7]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[8]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[9]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[10]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[11]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[12]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[13]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[14]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[15]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[16]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[17]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[18]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[19]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[20]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[21]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[22]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[23]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[24]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[25]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[26]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[27]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[28]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[29]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[30]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "ALUResultE[31]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[0]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[1]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[2]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[3]" is stuck at VCC File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[4]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[5]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[6]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[7]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[8]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[9]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[10]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[11]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[12]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[13]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[14]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[15]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[16]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[17]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[18]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[19]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[20]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[21]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[22]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[23]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[24]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[25]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[26]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[27]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[28]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[29]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[30]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+    Warning (13410): Pin "WriteData[31]" is stuck at GND File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 5
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Jairo/Desktop/ProyectoArqui/output_files/pipeline.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 1
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/Jairo/Desktop/ProyectoArqui/arm.sv Line: 1
+Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 129 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 144 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Fri Sep 28 11:00:30 2018
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:37
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Jairo/Desktop/ProyectoArqui/output_files/pipeline.map.smsg.
+
+
