@@ -1,10 +1,8 @@
-module pipeFD(input logic clk,input logic [31:0] InstrF, pcF,resultD, output logic [31:0] InstrD, pcD, resultF);
+module pipeFD(input logic clk,input logic [31:0] InstrF, output logic [31:0] InstrD);
 
 	always_ff @(posedge clk)
 	begin
 	InstrD <= InstrF;
-	pcD <= pcF;
-	resultF <= resultD;
 	end
 
 endmodule

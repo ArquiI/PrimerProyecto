@@ -1,8 +1,8 @@
-module condlogic (input		logic			clk, reset,BranchE,
-						input		logic	[3:0]	CondE,
+module condlogic (input		logic			clk, reset,
+						input		logic	[3:0]	Cond,
 						input		logic [3:0]	ALUFlags,
-						input		logic [1:0]	FlagWriteE,
-						input		logic			PCSrcE, RegWriteE, MemWriteE,
+						input		logic [1:0]	FlagW,
+						input		logic			PCS, RegW, MemW,
 						output	logic			PCSrc, RegWrite,
 													MemWrite);
 																										
@@ -18,12 +18,11 @@ module condlogic (input		logic			clk, reset,BranchE,
 									
 									 
 	//write controls are conditional
-	condcheck	cc(CondE, Flags, CondEx);
-	assign	FlagWrite	= 	FlagWriteE & 	{2{CondEx}};
-	assign	RegWrite		=	RegWriteE	&	CondEx;
-	assign	MemWrite		=	MemWriteE	&	CondEx;
-	assign	PCSrc			=	(PCSrcE	&	CondEx) | (BranchE & CondEx);
-	
+	condcheck	cc(Cond, Flags, CondEx);
+	assign	FlagWrite	= 	FlagW & 	{2{CondEx}};
+	assign	RegWrite		=	RegW	&	CondEx;
+	assign	MemWrite		=	MemW	&	CondEx;
+	assign	PCSrc			=	PCS	&	CondEx;
 	
 endmodule
 
