@@ -1,0 +1,903 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1539073309
+!i10b 1
+!s100 3<HkHQQCZMS>SGDY@=Xh:1
+IXA02c9X]GfX@=4nHo>^H@1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+Z4 w1539081036
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1539073309.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto
+Z9 tCvgOpt 0
+vaddNBits
+R1
+Z10 !s110 1539073314
+!i10b 1
+!s100 cBMj6dF_@m7h>PMSFE]bG3
+IH5YKA`<RZnP`@KgSWKQoj2
+R3
+!s105 addNBits_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z11 !s108 1539073314.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv|
+!i113 1
+R7
+R8
+R9
+nadd@n@bits
+vaddOneBit
+R1
+R10
+!i10b 1
+!s100 eRPo`LW`g0<m[26]:M]ba2
+IE]PI:>kPE83IZ1aoYEkG`0
+R3
+!s105 addOneBit_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nadd@one@bit
+valu
+R1
+R10
+!i10b 1
+!s100 93EoAdNJKNJ7df?z4C8Q_2
+I0c>27F^;DUDYV]iJE8TH<2
+R3
+!s105 alu_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z12 !s108 1539073313.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv|
+!i113 1
+R7
+R8
+R9
+vandNBits
+R1
+Z13 !s110 1539073313
+!i10b 1
+!s100 >eZi8>h8KJa7QDCOc^Knb2
+IN2V@b=I>ekGzNIE]d8]Da1
+R3
+!s105 andNBits_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv|
+!i113 1
+R7
+R8
+R9
+nand@n@bits
+vandOneBit
+R1
+R13
+!i10b 1
+!s100 >M@KCigM0Mb<1G:6T>Z3l0
+IWYMN0O?OD2RIk7P3VHfE:1
+R3
+!s105 andOneBit_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nand@one@bit
+varm
+R1
+Z14 !s110 1539073308
+!i10b 1
+!s100 NkQRS35L@gA]K9B=hmdPR0
+IGhmPMB`j5oKlc_13^cSJF0
+R3
+!s105 arm_sv_unit
+S1
+R0
+w1539068522
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z15 !s108 1539073308.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv|
+!i113 1
+R7
+R8
+R9
+vcarryFlag
+R1
+R13
+!i10b 1
+!s100 DVaDceczTSg1z_EZ8k8332
+IX:n^CY6B942GGcn]M5F750
+R3
+!s105 carryFlag_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv|
+!i113 1
+R7
+R8
+R9
+ncarry@flag
+vcondcheck
+R1
+Z16 !s110 1539073306
+!i10b 1
+!s100 Odn`o^?K:biNMACCfCf3c2
+I00c6W`=2eZ8KF=G7ZIZbN3
+R3
+!s105 condcheck_sv_unit
+S1
+R0
+R4
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z17 !s108 1539073306.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+Z18 !s110 1539073307
+!i10b 1
+!s100 _T=<XiA]686KjHQV1DN2F3
+IEVk:zkXOGH3UR2mFzHl^U3
+R3
+!s105 condlogic_sv_unit
+S1
+R0
+w1539066108
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z19 !s108 1539073307.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R14
+!i10b 1
+!s100 1da[Df28O;Gk[;7HjkzB30
+I79jT5HQzZoT9EQS6zK3LL3
+R3
+!s105 controller_sv_unit
+S1
+R0
+w1539068412
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+Z20 !s110 1539073310
+!i10b 1
+!s100 =EUdkU9aOBNWJ3SlnHhQc0
+I?;]U1lQZBB?NcH3aMBDV`0
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1539072990
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z21 !s108 1539073310.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R18
+!i10b 1
+!s100 bd^D4i7WX7Ja@FQaak<4h2
+IdIFOUkAA2`43CYf9NT1Nd0
+R3
+!s105 decoder_sv_unit
+S1
+R0
+w1539066169
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vdmem
+R1
+R13
+!i10b 1
+!s100 JT:6eK69OzY92Z4;OgHSj2
+IT5GXh67`AZQUdFB:>RbTR0
+R3
+!s105 dmem_sv_unit
+S1
+R0
+Z22 w1539081037
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z23 !s108 1539073312.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R2
+!i10b 1
+!s100 `Id8?;CYSFcKJck0I:O8c0
+I=L7PRO:blVdnQ@n;IP`_W0
+R3
+!s105 extend_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R16
+!i10b 1
+!s100 ;Q[_20hdTYA<EoAU?;SGl2
+I?mnhR`lF9;Y8g@@oN0doi2
+R3
+!s105 flopenr_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R14
+!i10b 1
+!s100 kP3n[bdJRikCS>21aobfb2
+IHD2nfRSJ3kzdPUZlIn2^@0
+R3
+!s105 flopr_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+Z24 !s110 1539073316
+!i10b 1
+!s100 Yz9Lglb;knhg^So5kCOaJ3
+Ibg<FG1fZ8KE14?R_en^Ua3
+R3
+!s105 imem_sv_unit
+S1
+R0
+w1539072373
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z25 !s108 1539073315.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R14
+!i10b 1
+!s100 50m8M2]Wd26EmCiD8]hko1
+IK8fHZI8_OE8<>amBBO19L1
+R3
+!s105 mux2_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vmux4x1
+R1
+Z26 !s110 1539073312
+!i10b 1
+!s100 Vg]CA<ZjmOXg<d]UINRBU2
+IWWKHZT_2]NBh3E?FS?oKo2
+R3
+!s105 mux4x1_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv|
+!i113 1
+R7
+R8
+R9
+vnegativeFlag
+R1
+R26
+!i10b 1
+!s100 L]:lSgToVzPOYFQkbO<hb0
+IFl@H7D8`=?eRiO=gJTNh<3
+R3
+!s105 negativeFlag_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv|
+!i113 1
+R7
+R8
+R9
+nnegative@flag
+vnotOneBit
+R1
+R26
+!i10b 1
+!s100 _a39hgK5f[INHiPSo;XCV0
+IgX>TZMLHP6PPL<<;:h9`32
+R3
+!s105 notOneBit_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nnot@one@bit
+vorNBits
+R1
+R26
+!i10b 1
+!s100 PmDS9Y@m:a]5>>253Ek4i1
+IY40PIb]?Bj`8dV<QUInO@1
+R3
+!s105 orNBits_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z27 !s108 1539073311.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv|
+!i113 1
+R7
+R8
+R9
+nor@n@bits
+vorOneBit
+R1
+Z28 !s110 1539073311
+!i10b 1
+!s100 QINfWBegBlc><jHQPngc82
+I6Ljf7ndnS5`Rni8ao]3j:0
+R3
+!s105 orOneBit_sv_unit
+S1
+R0
+R22
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nor@one@bit
+voverflowFlag
+R1
+R28
+!i10b 1
+!s100 S;kg;URO_Lc:IlYaCk59o0
+IYeFHPVN7o844UH4mjOFmz1
+R3
+!s105 overflowFlag_sv_unit
+S1
+R0
+Z29 w1539081038
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv|
+!i113 1
+R7
+R8
+R9
+noverflow@flag
+vpipeDE
+R1
+Z30 !s110 1539073315
+!i10b 1
+!s100 h6PV8YSBAa[=^UB[GB:^k2
+IT`SF@azEKDK6kMnCQgIST0
+R3
+!s105 pipeDE_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv|
+!i113 1
+R7
+R8
+R9
+npipe@d@e
+vpipeEM
+R1
+R30
+!i10b 1
+!s100 a=PTJ1Ra>^]K6F_i5l?hO1
+Io==P6DHKK`55Q1Ndn@gi[0
+R3
+!s105 pipeEM_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv|
+!i113 1
+R7
+R8
+R9
+npipe@e@m
+vpipeFD
+R1
+R30
+!i10b 1
+!s100 U?R]bkWjUBV?Y<UJDg@cM2
+I4B7^ZoQdI5K4d0KdWkjFO0
+R3
+!s105 pipeFD_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv|
+!i113 1
+R7
+R8
+R9
+npipe@f@d
+vpipeMW
+R1
+R30
+!i10b 1
+!s100 :JW:kEglHf_[B2LAIdVA_3
+IIMSNzCA4Q@ngO0AF@^oZR1
+R3
+!s105 pipeMW_sv_unit
+S1
+R0
+w1539071171
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R25
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv|
+!i113 1
+R7
+R8
+R9
+npipe@m@w
+vregfile
+R1
+R10
+!i10b 1
+!s100 i[Kz=1Q=5@Lz20nhO@CXV1
+IbmX;1CfY[W^W[cEH?gnPK2
+R3
+!s105 regfile_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vsubtractNBits
+R1
+R28
+!i10b 1
+!s100 T6^<?DfBmV:=h2CAKVR6W0
+I[EI;KPXGi7F9:_e9MNNhB1
+R3
+!s105 subtractNBits_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv|
+!i113 1
+R7
+R8
+R9
+nsubtract@n@bits
+vsubtractOneBit
+R1
+R28
+!i10b 1
+!s100 b2<Slg`A1Rmd1E54:?OAV1
+IC^9f;jck=A9_h`1Ym]n<a3
+R3
+!s105 subtractOneBit_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R27
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nsubtract@one@bit
+vtestbench
+R1
+R24
+!i10b 1
+!s100 HZ9L6lGOJ9GAlZcV1e3nz1
+Ibb4h8TDCJ5A3KONf1gMa52
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1539083269
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1539073316.000000
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv|
+!i113 1
+R7
+R8
+R9
+vxorOneBit
+R1
+R20
+!i10b 1
+!s100 e2fPLL3jnS?5;4G7e4ERT3
+Ig@n`lgSU<<4LCNHMG@Kzl0
+R3
+!s105 xorOneBit_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv|
+!i113 1
+R7
+R8
+R9
+nxor@one@bit
+vzeroFlag
+R1
+R20
+!i10b 1
+!s100 CcfX:DP9ad=YnQRYjSXPz3
+I3TbQGRAnPW<P[c@ZHZRPc2
+R3
+!s105 zeroFlag_sv_unit
+S1
+R0
+R29
+8C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv
+FC:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto|C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv|
+!i113 1
+R7
+R8
+R9
+nzero@flag

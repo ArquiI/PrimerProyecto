@@ -1,140 +1,147 @@
-|arm
+|testbench
+
+
+|testbench|arm:dut
 clk => clk.IN2
 reset => reset.IN2
-PCF[0] << datapath:dp.port10
-PCF[1] << datapath:dp.port10
-PCF[2] << datapath:dp.port10
-PCF[3] << datapath:dp.port10
-PCF[4] << datapath:dp.port10
-PCF[5] << datapath:dp.port10
-PCF[6] << datapath:dp.port10
-PCF[7] << datapath:dp.port10
-PCF[8] << datapath:dp.port10
-PCF[9] << datapath:dp.port10
-PCF[10] << datapath:dp.port10
-PCF[11] << datapath:dp.port10
-PCF[12] << datapath:dp.port10
-PCF[13] << datapath:dp.port10
-PCF[14] << datapath:dp.port10
-PCF[15] << datapath:dp.port10
-PCF[16] << datapath:dp.port10
-PCF[17] << datapath:dp.port10
-PCF[18] << datapath:dp.port10
-PCF[19] << datapath:dp.port10
-PCF[20] << datapath:dp.port10
-PCF[21] << datapath:dp.port10
-PCF[22] << datapath:dp.port10
-PCF[23] << datapath:dp.port10
-PCF[24] << datapath:dp.port10
-PCF[25] << datapath:dp.port10
-PCF[26] << datapath:dp.port10
-PCF[27] << datapath:dp.port10
-PCF[28] << datapath:dp.port10
-PCF[29] << datapath:dp.port10
-PCF[30] << datapath:dp.port10
-PCF[31] << datapath:dp.port10
-InstrF[0] << datapath:dp.port11
-InstrF[1] << datapath:dp.port11
-InstrF[2] << datapath:dp.port11
-InstrF[3] << datapath:dp.port11
-InstrF[4] << datapath:dp.port11
-InstrF[5] << datapath:dp.port11
-InstrF[6] << datapath:dp.port11
-InstrF[7] << datapath:dp.port11
-InstrF[8] << datapath:dp.port11
-InstrF[9] << datapath:dp.port11
-InstrF[10] << datapath:dp.port11
-InstrF[11] << datapath:dp.port11
-InstrF[12] << InstrF[12].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[13] << InstrF[13].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[14] << InstrF[14].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[15] << InstrF[15].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[16] << InstrF[16].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[17] << InstrF[17].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[18] << InstrF[18].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[19] << InstrF[19].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[20] << InstrF[20].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[21] << InstrF[21].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[22] << InstrF[22].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[23] << InstrF[23].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[24] << InstrF[24].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[25] << InstrF[25].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[26] << InstrF[26].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[27] << InstrF[27].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[28] << InstrF[28].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[29] << InstrF[29].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[30] << InstrF[30].DB_MAX_OUTPUT_PORT_TYPE
-InstrF[31] << InstrF[31].DB_MAX_OUTPUT_PORT_TYPE
-MemWrite << MemWrite.DB_MAX_OUTPUT_PORT_TYPE
-ALUResultE[0] << datapath:dp.port12
-ALUResultE[1] << datapath:dp.port12
-ALUResultE[2] << datapath:dp.port12
-ALUResultE[3] << datapath:dp.port12
-ALUResultE[4] << datapath:dp.port12
-ALUResultE[5] << datapath:dp.port12
-ALUResultE[6] << datapath:dp.port12
-ALUResultE[7] << datapath:dp.port12
-ALUResultE[8] << datapath:dp.port12
-ALUResultE[9] << datapath:dp.port12
-ALUResultE[10] << datapath:dp.port12
-ALUResultE[11] << datapath:dp.port12
-ALUResultE[12] << datapath:dp.port12
-ALUResultE[13] << datapath:dp.port12
-ALUResultE[14] << datapath:dp.port12
-ALUResultE[15] << datapath:dp.port12
-ALUResultE[16] << datapath:dp.port12
-ALUResultE[17] << datapath:dp.port12
-ALUResultE[18] << datapath:dp.port12
-ALUResultE[19] << datapath:dp.port12
-ALUResultE[20] << datapath:dp.port12
-ALUResultE[21] << datapath:dp.port12
-ALUResultE[22] << datapath:dp.port12
-ALUResultE[23] << datapath:dp.port12
-ALUResultE[24] << datapath:dp.port12
-ALUResultE[25] << datapath:dp.port12
-ALUResultE[26] << datapath:dp.port12
-ALUResultE[27] << datapath:dp.port12
-ALUResultE[28] << datapath:dp.port12
-ALUResultE[29] << datapath:dp.port12
-ALUResultE[30] << datapath:dp.port12
-ALUResultE[31] << datapath:dp.port12
-WriteData[0] << datapath:dp.port13
-WriteData[1] << datapath:dp.port13
-WriteData[2] << datapath:dp.port13
-WriteData[3] << datapath:dp.port13
-WriteData[4] << datapath:dp.port13
-WriteData[5] << datapath:dp.port13
-WriteData[6] << datapath:dp.port13
-WriteData[7] << datapath:dp.port13
-WriteData[8] << datapath:dp.port13
-WriteData[9] << datapath:dp.port13
-WriteData[10] << datapath:dp.port13
-WriteData[11] << datapath:dp.port13
-WriteData[12] << datapath:dp.port13
-WriteData[13] << datapath:dp.port13
-WriteData[14] << datapath:dp.port13
-WriteData[15] << datapath:dp.port13
-WriteData[16] << datapath:dp.port13
-WriteData[17] << datapath:dp.port13
-WriteData[18] << datapath:dp.port13
-WriteData[19] << datapath:dp.port13
-WriteData[20] << datapath:dp.port13
-WriteData[21] << datapath:dp.port13
-WriteData[22] << datapath:dp.port13
-WriteData[23] << datapath:dp.port13
-WriteData[24] << datapath:dp.port13
-WriteData[25] << datapath:dp.port13
-WriteData[26] << datapath:dp.port13
-WriteData[27] << datapath:dp.port13
-WriteData[28] << datapath:dp.port13
-WriteData[29] << datapath:dp.port13
-WriteData[30] << datapath:dp.port13
-WriteData[31] << datapath:dp.port13
+PCF[0] <= datapath:dp.port11
+PCF[1] <= datapath:dp.port11
+PCF[2] <= datapath:dp.port11
+PCF[3] <= datapath:dp.port11
+PCF[4] <= datapath:dp.port11
+PCF[5] <= datapath:dp.port11
+PCF[6] <= datapath:dp.port11
+PCF[7] <= datapath:dp.port11
+PCF[8] <= datapath:dp.port11
+PCF[9] <= datapath:dp.port11
+PCF[10] <= datapath:dp.port11
+PCF[11] <= datapath:dp.port11
+PCF[12] <= datapath:dp.port11
+PCF[13] <= datapath:dp.port11
+PCF[14] <= datapath:dp.port11
+PCF[15] <= datapath:dp.port11
+PCF[16] <= datapath:dp.port11
+PCF[17] <= datapath:dp.port11
+PCF[18] <= datapath:dp.port11
+PCF[19] <= datapath:dp.port11
+PCF[20] <= datapath:dp.port11
+PCF[21] <= datapath:dp.port11
+PCF[22] <= datapath:dp.port11
+PCF[23] <= datapath:dp.port11
+PCF[24] <= datapath:dp.port11
+PCF[25] <= datapath:dp.port11
+PCF[26] <= datapath:dp.port11
+PCF[27] <= datapath:dp.port11
+PCF[28] <= datapath:dp.port11
+PCF[29] <= datapath:dp.port11
+PCF[30] <= datapath:dp.port11
+PCF[31] <= datapath:dp.port11
+InstrF[0] <= datapath:dp.port12
+InstrF[1] <= datapath:dp.port12
+InstrF[2] <= datapath:dp.port12
+InstrF[3] <= datapath:dp.port12
+InstrF[4] <= datapath:dp.port12
+InstrF[5] <= datapath:dp.port12
+InstrF[6] <= datapath:dp.port12
+InstrF[7] <= datapath:dp.port12
+InstrF[8] <= datapath:dp.port12
+InstrF[9] <= datapath:dp.port12
+InstrF[10] <= datapath:dp.port12
+InstrF[11] <= datapath:dp.port12
+InstrF[12] <= InstrF[12].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[13] <= InstrF[13].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[14] <= InstrF[14].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[15] <= InstrF[15].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[16] <= InstrF[16].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[17] <= InstrF[17].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[18] <= InstrF[18].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[19] <= InstrF[19].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[20] <= InstrF[20].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[21] <= InstrF[21].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[22] <= InstrF[22].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[23] <= InstrF[23].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[24] <= InstrF[24].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[25] <= InstrF[25].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[26] <= InstrF[26].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[27] <= InstrF[27].DB_MAX_OUTPUT_PORT_TYPE
+InstrF[28] <= datapath:dp.port12
+InstrF[29] <= datapath:dp.port12
+InstrF[30] <= datapath:dp.port12
+InstrF[31] <= datapath:dp.port12
+MemWriteD <= MemWriteD.DB_MAX_OUTPUT_PORT_TYPE
+ALUResultE[0] <= datapath:dp.port13
+ALUResultE[1] <= datapath:dp.port13
+ALUResultE[2] <= datapath:dp.port13
+ALUResultE[3] <= datapath:dp.port13
+ALUResultE[4] <= datapath:dp.port13
+ALUResultE[5] <= datapath:dp.port13
+ALUResultE[6] <= datapath:dp.port13
+ALUResultE[7] <= datapath:dp.port13
+ALUResultE[8] <= datapath:dp.port13
+ALUResultE[9] <= datapath:dp.port13
+ALUResultE[10] <= datapath:dp.port13
+ALUResultE[11] <= datapath:dp.port13
+ALUResultE[12] <= datapath:dp.port13
+ALUResultE[13] <= datapath:dp.port13
+ALUResultE[14] <= datapath:dp.port13
+ALUResultE[15] <= datapath:dp.port13
+ALUResultE[16] <= datapath:dp.port13
+ALUResultE[17] <= datapath:dp.port13
+ALUResultE[18] <= datapath:dp.port13
+ALUResultE[19] <= datapath:dp.port13
+ALUResultE[20] <= datapath:dp.port13
+ALUResultE[21] <= datapath:dp.port13
+ALUResultE[22] <= datapath:dp.port13
+ALUResultE[23] <= datapath:dp.port13
+ALUResultE[24] <= datapath:dp.port13
+ALUResultE[25] <= datapath:dp.port13
+ALUResultE[26] <= datapath:dp.port13
+ALUResultE[27] <= datapath:dp.port13
+ALUResultE[28] <= datapath:dp.port13
+ALUResultE[29] <= datapath:dp.port13
+ALUResultE[30] <= datapath:dp.port13
+ALUResultE[31] <= datapath:dp.port13
+WriteData[0] <= datapath:dp.port14
+WriteData[1] <= datapath:dp.port14
+WriteData[2] <= datapath:dp.port14
+WriteData[3] <= datapath:dp.port14
+WriteData[4] <= datapath:dp.port14
+WriteData[5] <= datapath:dp.port14
+WriteData[6] <= datapath:dp.port14
+WriteData[7] <= datapath:dp.port14
+WriteData[8] <= datapath:dp.port14
+WriteData[9] <= datapath:dp.port14
+WriteData[10] <= datapath:dp.port14
+WriteData[11] <= datapath:dp.port14
+WriteData[12] <= datapath:dp.port14
+WriteData[13] <= datapath:dp.port14
+WriteData[14] <= datapath:dp.port14
+WriteData[15] <= datapath:dp.port14
+WriteData[16] <= datapath:dp.port14
+WriteData[17] <= datapath:dp.port14
+WriteData[18] <= datapath:dp.port14
+WriteData[19] <= datapath:dp.port14
+WriteData[20] <= datapath:dp.port14
+WriteData[21] <= datapath:dp.port14
+WriteData[22] <= datapath:dp.port14
+WriteData[23] <= datapath:dp.port14
+WriteData[24] <= datapath:dp.port14
+WriteData[25] <= datapath:dp.port14
+WriteData[26] <= datapath:dp.port14
+WriteData[27] <= datapath:dp.port14
+WriteData[28] <= datapath:dp.port14
+WriteData[29] <= datapath:dp.port14
+WriteData[30] <= datapath:dp.port14
+WriteData[31] <= datapath:dp.port14
 
 
-|arm|controller:c
+|testbench|arm:dut|controller:c
 clk => clk.IN1
 reset => reset.IN1
+PCSrcE => PCSrcE.IN1
+RegWriteE => RegWriteE.IN1
+MemWriteE => MemWriteE.IN1
+BranchE => BranchE.IN1
 Instr[12] => Instr[12].IN1
 Instr[13] => Instr[13].IN1
 Instr[14] => Instr[14].IN1
@@ -151,28 +158,36 @@ Instr[24] => Instr[24].IN1
 Instr[25] => Instr[25].IN1
 Instr[26] => Instr[26].IN1
 Instr[27] => Instr[27].IN1
-Instr[28] => Instr[28].IN1
-Instr[29] => Instr[29].IN1
-Instr[30] => Instr[30].IN1
-Instr[31] => Instr[31].IN1
+condE[0] => condE[0].IN1
+condE[1] => condE[1].IN1
+condE[2] => condE[2].IN1
+condE[3] => condE[3].IN1
 ALUFlags[0] => ALUFlags[0].IN1
 ALUFlags[1] => ALUFlags[1].IN1
 ALUFlags[2] => ALUFlags[2].IN1
 ALUFlags[3] => ALUFlags[3].IN1
-RegSrc[0] <= decoder:dec.port10
-RegSrc[1] <= decoder:dec.port10
-RegWrite <= condlogic:cl.port9
-ImmSrc[0] <= decoder:dec.port9
-ImmSrc[1] <= decoder:dec.port9
-ALUSrc <= decoder:dec.port8
-ALUControl[0] <= decoder:dec.port11
-ALUControl[1] <= decoder:dec.port11
-MemWrite <= condlogic:cl.port10
-MemtoReg <= decoder:dec.port7
-PCSrc <= condlogic:cl.port8
+RegSrcD[0] <= decoder:dec.port10
+RegSrcD[1] <= decoder:dec.port10
+RegWriteD <= decoder:dec.port5
+ImmSrcD[0] <= decoder:dec.port9
+ImmSrcD[1] <= decoder:dec.port9
+ALUSrcD <= decoder:dec.port8
+ALUControlD[0] <= decoder:dec.port11
+ALUControlD[1] <= decoder:dec.port11
+MemWriteD <= decoder:dec.port6
+MemtoRegD <= decoder:dec.port7
+PCSrcD <= decoder:dec.port4
+FlagWriteD[0] <= decoder:dec.port3
+FlagWriteD[1] <= decoder:dec.port3
+BranchD <= <GND>
+PCSrc <= condlogic:cl.port9
+RegWrite <= condlogic:cl.port10
+MemWrite <= condlogic:cl.port11
+FlagWriteE[0] => FlagWriteE[0].IN1
+FlagWriteE[1] => FlagWriteE[1].IN1
 
 
-|arm|controller:c|decoder:dec
+|testbench|arm:dut|controller:c|decoder:dec
 Op[0] => controls.OUTPUTSELECT
 Op[0] => Mux0.IN4
 Op[0] => Mux1.IN4
@@ -217,28 +232,29 @@ ALUControl[0] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 ALUControl[1] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|controller:c|condlogic:cl
+|testbench|arm:dut|controller:c|condlogic:cl
 clk => clk.IN2
 reset => reset.IN2
-Cond[0] => Cond[0].IN1
-Cond[1] => Cond[1].IN1
-Cond[2] => Cond[2].IN1
-Cond[3] => Cond[3].IN1
+BranchE => PCSrc.IN1
+CondE[0] => CondE[0].IN1
+CondE[1] => CondE[1].IN1
+CondE[2] => CondE[2].IN1
+CondE[3] => CondE[3].IN1
 ALUFlags[0] => ALUFlags[0].IN1
 ALUFlags[1] => ALUFlags[1].IN1
 ALUFlags[2] => ALUFlags[2].IN1
 ALUFlags[3] => ALUFlags[3].IN1
-FlagW[0] => FlagWrite.IN1
-FlagW[1] => FlagWrite.IN1
-PCS => PCSrc.IN1
-RegW => RegWrite.IN1
-MemW => MemWrite.IN1
+FlagWriteE[0] => FlagWrite.IN1
+FlagWriteE[1] => FlagWrite.IN1
+PCSrcE => PCSrc.IN1
+RegWriteE => RegWrite.IN1
+MemWriteE => MemWrite.IN1
 PCSrc <= PCSrc.DB_MAX_OUTPUT_PORT_TYPE
 RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|controller:c|condlogic:cl|flopenr:flagreg1
+|testbench|arm:dut|controller:c|condlogic:cl|flopenr:flagreg1
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 reset => q[0]~reg0.ACLR
@@ -251,7 +267,7 @@ q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|controller:c|condlogic:cl|flopenr:flagreg0
+|testbench|arm:dut|controller:c|condlogic:cl|flopenr:flagreg0
 clk => q[0]~reg0.CLK
 clk => q[1]~reg0.CLK
 reset => q[0]~reg0.ACLR
@@ -264,7 +280,7 @@ q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|controller:c|condlogic:cl|condcheck:cc
+|testbench|arm:dut|controller:c|condlogic:cl|condcheck:cc
 Cond[0] => Mux0.IN14
 Cond[1] => Mux0.IN13
 Cond[2] => Mux0.IN12
@@ -285,23 +301,27 @@ Flags[3] => Mux0.IN4
 CondEx <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp
+|testbench|arm:dut|datapath:dp
 clk => clk.IN7
-reset => ~NO_FANOUT~
-RegSrc[0] => RegSrc[0].IN1
-RegSrc[1] => RegSrc[1].IN1
-RegWrite => RegWrite.IN1
-ImmSrc[0] => ImmSrc[0].IN1
-ImmSrc[1] => ImmSrc[1].IN1
-ALUSrc => ALUSrc.IN1
-ALUControl[0] => ALUControl[0].IN1
-ALUControl[1] => ALUControl[1].IN1
-MemtoReg => MemtoReg.IN1
-PCSrc => PCSrc.IN1
+reset => reset.IN1
+RegSrcD[0] => RegSrcD[0].IN1
+RegSrcD[1] => RegSrcD[1].IN1
+RegWriteD => RegWriteD.IN1
+ImmSrcD[0] => ImmSrcD[0].IN1
+ImmSrcD[1] => ImmSrcD[1].IN1
+ALUSrcD => ALUSrcD.IN1
+ALUControlD[0] => ALUControlD[0].IN1
+ALUControlD[1] => ALUControlD[1].IN1
+MemtoRegD => MemtoRegD.IN1
+PCSrcD => PCSrcD.IN1
 ALUFlags[0] <= alu:alu.port4
 ALUFlags[1] <= alu:alu.port4
 ALUFlags[2] <= alu:alu.port4
 ALUFlags[3] <= alu:alu.port4
+condE[0] <= pipeDE:pipelineDE.port18
+condE[1] <= pipeDE:pipelineDE.port18
+condE[2] <= pipeDE:pipelineDE.port18
+condE[3] <= pipeDE:pipelineDE.port18
 PCF[0] <= PCF[0].DB_MAX_OUTPUT_PORT_TYPE
 PCF[1] <= PCF[1].DB_MAX_OUTPUT_PORT_TYPE
 PCF[2] <= PCF[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -430,467 +450,22 @@ WriteDataE[28] <= WriteDataE[28].DB_MAX_OUTPUT_PORT_TYPE
 WriteDataE[29] <= WriteDataE[29].DB_MAX_OUTPUT_PORT_TYPE
 WriteDataE[30] <= WriteDataE[30].DB_MAX_OUTPUT_PORT_TYPE
 WriteDataE[31] <= WriteDataE[31].DB_MAX_OUTPUT_PORT_TYPE
+FlagWriteE[0] <= pipeDE:pipelineDE.port26
+FlagWriteE[1] <= pipeDE:pipelineDE.port26
+PCSrcE <= pipeDE:pipelineDE.port23
+RegWriteE <= pipeDE:pipelineDE.port19
+MemWriteE <= pipeDE:pipelineDE.port22
+BranchE <= pipeDE:pipelineDE.port24
+MemWriteD => MemWriteD.IN1
+BranchD => BranchD.IN1
+PCSrc => PCSrc.IN1
+RegWrite => RegWrite.IN1
 MemWrite => MemWrite.IN1
+FlagWriteD[0] => FlagWriteD[0].IN1
+FlagWriteD[1] => FlagWriteD[1].IN1
 
 
-|arm|datapath:dp|imem:imem
-a[0] => ~NO_FANOUT~
-a[1] => ~NO_FANOUT~
-a[2] => RAM.RADDR
-a[3] => RAM.RADDR1
-a[4] => RAM.RADDR2
-a[5] => RAM.RADDR3
-a[6] => RAM.RADDR4
-a[7] => RAM.RADDR5
-a[8] => ~NO_FANOUT~
-a[9] => ~NO_FANOUT~
-a[10] => ~NO_FANOUT~
-a[11] => ~NO_FANOUT~
-a[12] => ~NO_FANOUT~
-a[13] => ~NO_FANOUT~
-a[14] => ~NO_FANOUT~
-a[15] => ~NO_FANOUT~
-a[16] => ~NO_FANOUT~
-a[17] => ~NO_FANOUT~
-a[18] => ~NO_FANOUT~
-a[19] => ~NO_FANOUT~
-a[20] => ~NO_FANOUT~
-a[21] => ~NO_FANOUT~
-a[22] => ~NO_FANOUT~
-a[23] => ~NO_FANOUT~
-a[24] => ~NO_FANOUT~
-a[25] => ~NO_FANOUT~
-a[26] => ~NO_FANOUT~
-a[27] => ~NO_FANOUT~
-a[28] => ~NO_FANOUT~
-a[29] => ~NO_FANOUT~
-a[30] => ~NO_FANOUT~
-a[31] => ~NO_FANOUT~
-rd[0] <= RAM.DATAOUT
-rd[1] <= RAM.DATAOUT1
-rd[2] <= RAM.DATAOUT2
-rd[3] <= RAM.DATAOUT3
-rd[4] <= RAM.DATAOUT4
-rd[5] <= RAM.DATAOUT5
-rd[6] <= RAM.DATAOUT6
-rd[7] <= RAM.DATAOUT7
-rd[8] <= RAM.DATAOUT8
-rd[9] <= RAM.DATAOUT9
-rd[10] <= RAM.DATAOUT10
-rd[11] <= RAM.DATAOUT11
-rd[12] <= RAM.DATAOUT12
-rd[13] <= RAM.DATAOUT13
-rd[14] <= RAM.DATAOUT14
-rd[15] <= RAM.DATAOUT15
-rd[16] <= RAM.DATAOUT16
-rd[17] <= RAM.DATAOUT17
-rd[18] <= RAM.DATAOUT18
-rd[19] <= RAM.DATAOUT19
-rd[20] <= RAM.DATAOUT20
-rd[21] <= RAM.DATAOUT21
-rd[22] <= RAM.DATAOUT22
-rd[23] <= RAM.DATAOUT23
-rd[24] <= RAM.DATAOUT24
-rd[25] <= RAM.DATAOUT25
-rd[26] <= RAM.DATAOUT26
-rd[27] <= RAM.DATAOUT27
-rd[28] <= RAM.DATAOUT28
-rd[29] <= RAM.DATAOUT29
-rd[30] <= RAM.DATAOUT30
-rd[31] <= RAM.DATAOUT31
-
-
-|arm|datapath:dp|adder:pcadd1
-a[0] => Add0.IN32
-a[1] => Add0.IN31
-a[2] => Add0.IN30
-a[3] => Add0.IN29
-a[4] => Add0.IN28
-a[5] => Add0.IN27
-a[6] => Add0.IN26
-a[7] => Add0.IN25
-a[8] => Add0.IN24
-a[9] => Add0.IN23
-a[10] => Add0.IN22
-a[11] => Add0.IN21
-a[12] => Add0.IN20
-a[13] => Add0.IN19
-a[14] => Add0.IN18
-a[15] => Add0.IN17
-a[16] => Add0.IN16
-a[17] => Add0.IN15
-a[18] => Add0.IN14
-a[19] => Add0.IN13
-a[20] => Add0.IN12
-a[21] => Add0.IN11
-a[22] => Add0.IN10
-a[23] => Add0.IN9
-a[24] => Add0.IN8
-a[25] => Add0.IN7
-a[26] => Add0.IN6
-a[27] => Add0.IN5
-a[28] => Add0.IN4
-a[29] => Add0.IN3
-a[30] => Add0.IN2
-a[31] => Add0.IN1
-b[0] => Add0.IN64
-b[1] => Add0.IN63
-b[2] => Add0.IN62
-b[3] => Add0.IN61
-b[4] => Add0.IN60
-b[5] => Add0.IN59
-b[6] => Add0.IN58
-b[7] => Add0.IN57
-b[8] => Add0.IN56
-b[9] => Add0.IN55
-b[10] => Add0.IN54
-b[11] => Add0.IN53
-b[12] => Add0.IN52
-b[13] => Add0.IN51
-b[14] => Add0.IN50
-b[15] => Add0.IN49
-b[16] => Add0.IN48
-b[17] => Add0.IN47
-b[18] => Add0.IN46
-b[19] => Add0.IN45
-b[20] => Add0.IN44
-b[21] => Add0.IN43
-b[22] => Add0.IN42
-b[23] => Add0.IN41
-b[24] => Add0.IN40
-b[25] => Add0.IN39
-b[26] => Add0.IN38
-b[27] => Add0.IN37
-b[28] => Add0.IN36
-b[29] => Add0.IN35
-b[30] => Add0.IN34
-b[31] => Add0.IN33
-y[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[16] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[17] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[18] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[19] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[20] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[21] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[22] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[23] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[24] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[25] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[26] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[27] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[28] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[29] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-y[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|arm|datapath:dp|pipeFD:pipelineFD
-clk => resultF[0]~reg0.CLK
-clk => resultF[1]~reg0.CLK
-clk => resultF[2]~reg0.CLK
-clk => resultF[3]~reg0.CLK
-clk => resultF[4]~reg0.CLK
-clk => resultF[5]~reg0.CLK
-clk => resultF[6]~reg0.CLK
-clk => resultF[7]~reg0.CLK
-clk => resultF[8]~reg0.CLK
-clk => resultF[9]~reg0.CLK
-clk => resultF[10]~reg0.CLK
-clk => resultF[11]~reg0.CLK
-clk => resultF[12]~reg0.CLK
-clk => resultF[13]~reg0.CLK
-clk => resultF[14]~reg0.CLK
-clk => resultF[15]~reg0.CLK
-clk => resultF[16]~reg0.CLK
-clk => resultF[17]~reg0.CLK
-clk => resultF[18]~reg0.CLK
-clk => resultF[19]~reg0.CLK
-clk => resultF[20]~reg0.CLK
-clk => resultF[21]~reg0.CLK
-clk => resultF[22]~reg0.CLK
-clk => resultF[23]~reg0.CLK
-clk => resultF[24]~reg0.CLK
-clk => resultF[25]~reg0.CLK
-clk => resultF[26]~reg0.CLK
-clk => resultF[27]~reg0.CLK
-clk => resultF[28]~reg0.CLK
-clk => resultF[29]~reg0.CLK
-clk => resultF[30]~reg0.CLK
-clk => resultF[31]~reg0.CLK
-clk => pcD[0]~reg0.CLK
-clk => pcD[1]~reg0.CLK
-clk => pcD[2]~reg0.CLK
-clk => pcD[3]~reg0.CLK
-clk => pcD[4]~reg0.CLK
-clk => pcD[5]~reg0.CLK
-clk => pcD[6]~reg0.CLK
-clk => pcD[7]~reg0.CLK
-clk => pcD[8]~reg0.CLK
-clk => pcD[9]~reg0.CLK
-clk => pcD[10]~reg0.CLK
-clk => pcD[11]~reg0.CLK
-clk => pcD[12]~reg0.CLK
-clk => pcD[13]~reg0.CLK
-clk => pcD[14]~reg0.CLK
-clk => pcD[15]~reg0.CLK
-clk => pcD[16]~reg0.CLK
-clk => pcD[17]~reg0.CLK
-clk => pcD[18]~reg0.CLK
-clk => pcD[19]~reg0.CLK
-clk => pcD[20]~reg0.CLK
-clk => pcD[21]~reg0.CLK
-clk => pcD[22]~reg0.CLK
-clk => pcD[23]~reg0.CLK
-clk => pcD[24]~reg0.CLK
-clk => pcD[25]~reg0.CLK
-clk => pcD[26]~reg0.CLK
-clk => pcD[27]~reg0.CLK
-clk => pcD[28]~reg0.CLK
-clk => pcD[29]~reg0.CLK
-clk => pcD[30]~reg0.CLK
-clk => pcD[31]~reg0.CLK
-clk => InstrD[0]~reg0.CLK
-clk => InstrD[1]~reg0.CLK
-clk => InstrD[2]~reg0.CLK
-clk => InstrD[3]~reg0.CLK
-clk => InstrD[4]~reg0.CLK
-clk => InstrD[5]~reg0.CLK
-clk => InstrD[6]~reg0.CLK
-clk => InstrD[7]~reg0.CLK
-clk => InstrD[8]~reg0.CLK
-clk => InstrD[9]~reg0.CLK
-clk => InstrD[10]~reg0.CLK
-clk => InstrD[11]~reg0.CLK
-clk => InstrD[12]~reg0.CLK
-clk => InstrD[13]~reg0.CLK
-clk => InstrD[14]~reg0.CLK
-clk => InstrD[15]~reg0.CLK
-clk => InstrD[16]~reg0.CLK
-clk => InstrD[17]~reg0.CLK
-clk => InstrD[18]~reg0.CLK
-clk => InstrD[19]~reg0.CLK
-clk => InstrD[20]~reg0.CLK
-clk => InstrD[21]~reg0.CLK
-clk => InstrD[22]~reg0.CLK
-clk => InstrD[23]~reg0.CLK
-clk => InstrD[24]~reg0.CLK
-clk => InstrD[25]~reg0.CLK
-clk => InstrD[26]~reg0.CLK
-clk => InstrD[27]~reg0.CLK
-clk => InstrD[28]~reg0.CLK
-clk => InstrD[29]~reg0.CLK
-clk => InstrD[30]~reg0.CLK
-clk => InstrD[31]~reg0.CLK
-InstrF[0] => InstrD[0]~reg0.DATAIN
-InstrF[1] => InstrD[1]~reg0.DATAIN
-InstrF[2] => InstrD[2]~reg0.DATAIN
-InstrF[3] => InstrD[3]~reg0.DATAIN
-InstrF[4] => InstrD[4]~reg0.DATAIN
-InstrF[5] => InstrD[5]~reg0.DATAIN
-InstrF[6] => InstrD[6]~reg0.DATAIN
-InstrF[7] => InstrD[7]~reg0.DATAIN
-InstrF[8] => InstrD[8]~reg0.DATAIN
-InstrF[9] => InstrD[9]~reg0.DATAIN
-InstrF[10] => InstrD[10]~reg0.DATAIN
-InstrF[11] => InstrD[11]~reg0.DATAIN
-InstrF[12] => InstrD[12]~reg0.DATAIN
-InstrF[13] => InstrD[13]~reg0.DATAIN
-InstrF[14] => InstrD[14]~reg0.DATAIN
-InstrF[15] => InstrD[15]~reg0.DATAIN
-InstrF[16] => InstrD[16]~reg0.DATAIN
-InstrF[17] => InstrD[17]~reg0.DATAIN
-InstrF[18] => InstrD[18]~reg0.DATAIN
-InstrF[19] => InstrD[19]~reg0.DATAIN
-InstrF[20] => InstrD[20]~reg0.DATAIN
-InstrF[21] => InstrD[21]~reg0.DATAIN
-InstrF[22] => InstrD[22]~reg0.DATAIN
-InstrF[23] => InstrD[23]~reg0.DATAIN
-InstrF[24] => InstrD[24]~reg0.DATAIN
-InstrF[25] => InstrD[25]~reg0.DATAIN
-InstrF[26] => InstrD[26]~reg0.DATAIN
-InstrF[27] => InstrD[27]~reg0.DATAIN
-InstrF[28] => InstrD[28]~reg0.DATAIN
-InstrF[29] => InstrD[29]~reg0.DATAIN
-InstrF[30] => InstrD[30]~reg0.DATAIN
-InstrF[31] => InstrD[31]~reg0.DATAIN
-pcF[0] => pcD[0]~reg0.DATAIN
-pcF[1] => pcD[1]~reg0.DATAIN
-pcF[2] => pcD[2]~reg0.DATAIN
-pcF[3] => pcD[3]~reg0.DATAIN
-pcF[4] => pcD[4]~reg0.DATAIN
-pcF[5] => pcD[5]~reg0.DATAIN
-pcF[6] => pcD[6]~reg0.DATAIN
-pcF[7] => pcD[7]~reg0.DATAIN
-pcF[8] => pcD[8]~reg0.DATAIN
-pcF[9] => pcD[9]~reg0.DATAIN
-pcF[10] => pcD[10]~reg0.DATAIN
-pcF[11] => pcD[11]~reg0.DATAIN
-pcF[12] => pcD[12]~reg0.DATAIN
-pcF[13] => pcD[13]~reg0.DATAIN
-pcF[14] => pcD[14]~reg0.DATAIN
-pcF[15] => pcD[15]~reg0.DATAIN
-pcF[16] => pcD[16]~reg0.DATAIN
-pcF[17] => pcD[17]~reg0.DATAIN
-pcF[18] => pcD[18]~reg0.DATAIN
-pcF[19] => pcD[19]~reg0.DATAIN
-pcF[20] => pcD[20]~reg0.DATAIN
-pcF[21] => pcD[21]~reg0.DATAIN
-pcF[22] => pcD[22]~reg0.DATAIN
-pcF[23] => pcD[23]~reg0.DATAIN
-pcF[24] => pcD[24]~reg0.DATAIN
-pcF[25] => pcD[25]~reg0.DATAIN
-pcF[26] => pcD[26]~reg0.DATAIN
-pcF[27] => pcD[27]~reg0.DATAIN
-pcF[28] => pcD[28]~reg0.DATAIN
-pcF[29] => pcD[29]~reg0.DATAIN
-pcF[30] => pcD[30]~reg0.DATAIN
-pcF[31] => pcD[31]~reg0.DATAIN
-resultD[0] => resultF[0]~reg0.DATAIN
-resultD[1] => resultF[1]~reg0.DATAIN
-resultD[2] => resultF[2]~reg0.DATAIN
-resultD[3] => resultF[3]~reg0.DATAIN
-resultD[4] => resultF[4]~reg0.DATAIN
-resultD[5] => resultF[5]~reg0.DATAIN
-resultD[6] => resultF[6]~reg0.DATAIN
-resultD[7] => resultF[7]~reg0.DATAIN
-resultD[8] => resultF[8]~reg0.DATAIN
-resultD[9] => resultF[9]~reg0.DATAIN
-resultD[10] => resultF[10]~reg0.DATAIN
-resultD[11] => resultF[11]~reg0.DATAIN
-resultD[12] => resultF[12]~reg0.DATAIN
-resultD[13] => resultF[13]~reg0.DATAIN
-resultD[14] => resultF[14]~reg0.DATAIN
-resultD[15] => resultF[15]~reg0.DATAIN
-resultD[16] => resultF[16]~reg0.DATAIN
-resultD[17] => resultF[17]~reg0.DATAIN
-resultD[18] => resultF[18]~reg0.DATAIN
-resultD[19] => resultF[19]~reg0.DATAIN
-resultD[20] => resultF[20]~reg0.DATAIN
-resultD[21] => resultF[21]~reg0.DATAIN
-resultD[22] => resultF[22]~reg0.DATAIN
-resultD[23] => resultF[23]~reg0.DATAIN
-resultD[24] => resultF[24]~reg0.DATAIN
-resultD[25] => resultF[25]~reg0.DATAIN
-resultD[26] => resultF[26]~reg0.DATAIN
-resultD[27] => resultF[27]~reg0.DATAIN
-resultD[28] => resultF[28]~reg0.DATAIN
-resultD[29] => resultF[29]~reg0.DATAIN
-resultD[30] => resultF[30]~reg0.DATAIN
-resultD[31] => resultF[31]~reg0.DATAIN
-InstrD[0] <= InstrD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[1] <= InstrD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[2] <= InstrD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[3] <= InstrD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[4] <= InstrD[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[5] <= InstrD[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[6] <= InstrD[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[7] <= InstrD[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[8] <= InstrD[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[9] <= InstrD[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[10] <= InstrD[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[11] <= InstrD[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[12] <= InstrD[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[13] <= InstrD[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[14] <= InstrD[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[15] <= InstrD[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[16] <= InstrD[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[17] <= InstrD[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[18] <= InstrD[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[19] <= InstrD[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[20] <= InstrD[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[21] <= InstrD[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[22] <= InstrD[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[23] <= InstrD[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[24] <= InstrD[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[25] <= InstrD[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[26] <= InstrD[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[27] <= InstrD[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[28] <= InstrD[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[29] <= InstrD[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[30] <= InstrD[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-InstrD[31] <= InstrD[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[0] <= pcD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[1] <= pcD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[2] <= pcD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[3] <= pcD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[4] <= pcD[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[5] <= pcD[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[6] <= pcD[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[7] <= pcD[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[8] <= pcD[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[9] <= pcD[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[10] <= pcD[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[11] <= pcD[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[12] <= pcD[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[13] <= pcD[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[14] <= pcD[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[15] <= pcD[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[16] <= pcD[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[17] <= pcD[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[18] <= pcD[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[19] <= pcD[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[20] <= pcD[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[21] <= pcD[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[22] <= pcD[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[23] <= pcD[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[24] <= pcD[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[25] <= pcD[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[26] <= pcD[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[27] <= pcD[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[28] <= pcD[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[29] <= pcD[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[30] <= pcD[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-pcD[31] <= pcD[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[0] <= resultF[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[1] <= resultF[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[2] <= resultF[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[3] <= resultF[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[4] <= resultF[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[5] <= resultF[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[6] <= resultF[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[7] <= resultF[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[8] <= resultF[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[9] <= resultF[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[10] <= resultF[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[11] <= resultF[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[12] <= resultF[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[13] <= resultF[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[14] <= resultF[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[15] <= resultF[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[16] <= resultF[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[17] <= resultF[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[18] <= resultF[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[19] <= resultF[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[20] <= resultF[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[21] <= resultF[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[22] <= resultF[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[23] <= resultF[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[24] <= resultF[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[25] <= resultF[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[26] <= resultF[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[27] <= resultF[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[28] <= resultF[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[29] <= resultF[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[30] <= resultF[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultF[31] <= resultF[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|arm|datapath:dp|mux2:pcmux
+|testbench|arm:dut|datapath:dp|mux2:pcmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1021,106 +596,138 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|pipePC:pipelinePC
-clk => PCF[0]~reg0.CLK
-clk => PCF[1]~reg0.CLK
-clk => PCF[2]~reg0.CLK
-clk => PCF[3]~reg0.CLK
-clk => PCF[4]~reg0.CLK
-clk => PCF[5]~reg0.CLK
-clk => PCF[6]~reg0.CLK
-clk => PCF[7]~reg0.CLK
-clk => PCF[8]~reg0.CLK
-clk => PCF[9]~reg0.CLK
-clk => PCF[10]~reg0.CLK
-clk => PCF[11]~reg0.CLK
-clk => PCF[12]~reg0.CLK
-clk => PCF[13]~reg0.CLK
-clk => PCF[14]~reg0.CLK
-clk => PCF[15]~reg0.CLK
-clk => PCF[16]~reg0.CLK
-clk => PCF[17]~reg0.CLK
-clk => PCF[18]~reg0.CLK
-clk => PCF[19]~reg0.CLK
-clk => PCF[20]~reg0.CLK
-clk => PCF[21]~reg0.CLK
-clk => PCF[22]~reg0.CLK
-clk => PCF[23]~reg0.CLK
-clk => PCF[24]~reg0.CLK
-clk => PCF[25]~reg0.CLK
-clk => PCF[26]~reg0.CLK
-clk => PCF[27]~reg0.CLK
-clk => PCF[28]~reg0.CLK
-clk => PCF[29]~reg0.CLK
-clk => PCF[30]~reg0.CLK
-clk => PCF[31]~reg0.CLK
-PC[0] => PCF[0]~reg0.DATAIN
-PC[1] => PCF[1]~reg0.DATAIN
-PC[2] => PCF[2]~reg0.DATAIN
-PC[3] => PCF[3]~reg0.DATAIN
-PC[4] => PCF[4]~reg0.DATAIN
-PC[5] => PCF[5]~reg0.DATAIN
-PC[6] => PCF[6]~reg0.DATAIN
-PC[7] => PCF[7]~reg0.DATAIN
-PC[8] => PCF[8]~reg0.DATAIN
-PC[9] => PCF[9]~reg0.DATAIN
-PC[10] => PCF[10]~reg0.DATAIN
-PC[11] => PCF[11]~reg0.DATAIN
-PC[12] => PCF[12]~reg0.DATAIN
-PC[13] => PCF[13]~reg0.DATAIN
-PC[14] => PCF[14]~reg0.DATAIN
-PC[15] => PCF[15]~reg0.DATAIN
-PC[16] => PCF[16]~reg0.DATAIN
-PC[17] => PCF[17]~reg0.DATAIN
-PC[18] => PCF[18]~reg0.DATAIN
-PC[19] => PCF[19]~reg0.DATAIN
-PC[20] => PCF[20]~reg0.DATAIN
-PC[21] => PCF[21]~reg0.DATAIN
-PC[22] => PCF[22]~reg0.DATAIN
-PC[23] => PCF[23]~reg0.DATAIN
-PC[24] => PCF[24]~reg0.DATAIN
-PC[25] => PCF[25]~reg0.DATAIN
-PC[26] => PCF[26]~reg0.DATAIN
-PC[27] => PCF[27]~reg0.DATAIN
-PC[28] => PCF[28]~reg0.DATAIN
-PC[29] => PCF[29]~reg0.DATAIN
-PC[30] => PCF[30]~reg0.DATAIN
-PC[31] => PCF[31]~reg0.DATAIN
-PCF[0] <= PCF[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[1] <= PCF[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[2] <= PCF[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[3] <= PCF[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[4] <= PCF[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[5] <= PCF[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[6] <= PCF[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[7] <= PCF[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[8] <= PCF[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[9] <= PCF[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[10] <= PCF[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[11] <= PCF[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[12] <= PCF[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[13] <= PCF[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[14] <= PCF[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[15] <= PCF[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[16] <= PCF[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[17] <= PCF[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[18] <= PCF[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[19] <= PCF[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[20] <= PCF[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[21] <= PCF[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[22] <= PCF[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[23] <= PCF[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[24] <= PCF[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[25] <= PCF[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[26] <= PCF[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[27] <= PCF[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[28] <= PCF[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[29] <= PCF[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[30] <= PCF[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-PCF[31] <= PCF[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|testbench|arm:dut|datapath:dp|flopr:pcreg
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+clk => q[20]~reg0.CLK
+clk => q[21]~reg0.CLK
+clk => q[22]~reg0.CLK
+clk => q[23]~reg0.CLK
+clk => q[24]~reg0.CLK
+clk => q[25]~reg0.CLK
+clk => q[26]~reg0.CLK
+clk => q[27]~reg0.CLK
+clk => q[28]~reg0.CLK
+clk => q[29]~reg0.CLK
+clk => q[30]~reg0.CLK
+clk => q[31]~reg0.CLK
+reset => q[0]~reg0.ACLR
+reset => q[1]~reg0.ACLR
+reset => q[2]~reg0.ACLR
+reset => q[3]~reg0.ACLR
+reset => q[4]~reg0.ACLR
+reset => q[5]~reg0.ACLR
+reset => q[6]~reg0.ACLR
+reset => q[7]~reg0.ACLR
+reset => q[8]~reg0.ACLR
+reset => q[9]~reg0.ACLR
+reset => q[10]~reg0.ACLR
+reset => q[11]~reg0.ACLR
+reset => q[12]~reg0.ACLR
+reset => q[13]~reg0.ACLR
+reset => q[14]~reg0.ACLR
+reset => q[15]~reg0.ACLR
+reset => q[16]~reg0.ACLR
+reset => q[17]~reg0.ACLR
+reset => q[18]~reg0.ACLR
+reset => q[19]~reg0.ACLR
+reset => q[20]~reg0.ACLR
+reset => q[21]~reg0.ACLR
+reset => q[22]~reg0.ACLR
+reset => q[23]~reg0.ACLR
+reset => q[24]~reg0.ACLR
+reset => q[25]~reg0.ACLR
+reset => q[26]~reg0.ACLR
+reset => q[27]~reg0.ACLR
+reset => q[28]~reg0.ACLR
+reset => q[29]~reg0.ACLR
+reset => q[30]~reg0.ACLR
+reset => q[31]~reg0.ACLR
+d[0] => q[0]~reg0.DATAIN
+d[1] => q[1]~reg0.DATAIN
+d[2] => q[2]~reg0.DATAIN
+d[3] => q[3]~reg0.DATAIN
+d[4] => q[4]~reg0.DATAIN
+d[5] => q[5]~reg0.DATAIN
+d[6] => q[6]~reg0.DATAIN
+d[7] => q[7]~reg0.DATAIN
+d[8] => q[8]~reg0.DATAIN
+d[9] => q[9]~reg0.DATAIN
+d[10] => q[10]~reg0.DATAIN
+d[11] => q[11]~reg0.DATAIN
+d[12] => q[12]~reg0.DATAIN
+d[13] => q[13]~reg0.DATAIN
+d[14] => q[14]~reg0.DATAIN
+d[15] => q[15]~reg0.DATAIN
+d[16] => q[16]~reg0.DATAIN
+d[17] => q[17]~reg0.DATAIN
+d[18] => q[18]~reg0.DATAIN
+d[19] => q[19]~reg0.DATAIN
+d[20] => q[20]~reg0.DATAIN
+d[21] => q[21]~reg0.DATAIN
+d[22] => q[22]~reg0.DATAIN
+d[23] => q[23]~reg0.DATAIN
+d[24] => q[24]~reg0.DATAIN
+d[25] => q[25]~reg0.DATAIN
+d[26] => q[26]~reg0.DATAIN
+d[27] => q[27]~reg0.DATAIN
+d[28] => q[28]~reg0.DATAIN
+d[29] => q[29]~reg0.DATAIN
+d[30] => q[30]~reg0.DATAIN
+d[31] => q[31]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= q[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= q[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= q[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|adder:pcadd2
+|testbench|arm:dut|datapath:dp|adder:pcadd1
 a[0] => Add0.IN32
 a[1] => Add0.IN31
 a[2] => Add0.IN30
@@ -1219,7 +826,173 @@ y[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|mux2:ra1mux
+|testbench|arm:dut|datapath:dp|imem:imem
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => RAM.RADDR
+a[3] => RAM.RADDR1
+a[4] => RAM.RADDR2
+a[5] => RAM.RADDR3
+a[6] => RAM.RADDR4
+a[7] => RAM.RADDR5
+a[8] => ~NO_FANOUT~
+a[9] => ~NO_FANOUT~
+a[10] => ~NO_FANOUT~
+a[11] => ~NO_FANOUT~
+a[12] => ~NO_FANOUT~
+a[13] => ~NO_FANOUT~
+a[14] => ~NO_FANOUT~
+a[15] => ~NO_FANOUT~
+a[16] => ~NO_FANOUT~
+a[17] => ~NO_FANOUT~
+a[18] => ~NO_FANOUT~
+a[19] => ~NO_FANOUT~
+a[20] => ~NO_FANOUT~
+a[21] => ~NO_FANOUT~
+a[22] => ~NO_FANOUT~
+a[23] => ~NO_FANOUT~
+a[24] => ~NO_FANOUT~
+a[25] => ~NO_FANOUT~
+a[26] => ~NO_FANOUT~
+a[27] => ~NO_FANOUT~
+a[28] => ~NO_FANOUT~
+a[29] => ~NO_FANOUT~
+a[30] => ~NO_FANOUT~
+a[31] => ~NO_FANOUT~
+rd[0] <= RAM.DATAOUT
+rd[1] <= RAM.DATAOUT1
+rd[2] <= RAM.DATAOUT2
+rd[3] <= RAM.DATAOUT3
+rd[4] <= RAM.DATAOUT4
+rd[5] <= RAM.DATAOUT5
+rd[6] <= RAM.DATAOUT6
+rd[7] <= RAM.DATAOUT7
+rd[8] <= RAM.DATAOUT8
+rd[9] <= RAM.DATAOUT9
+rd[10] <= RAM.DATAOUT10
+rd[11] <= RAM.DATAOUT11
+rd[12] <= RAM.DATAOUT12
+rd[13] <= RAM.DATAOUT13
+rd[14] <= RAM.DATAOUT14
+rd[15] <= RAM.DATAOUT15
+rd[16] <= RAM.DATAOUT16
+rd[17] <= RAM.DATAOUT17
+rd[18] <= RAM.DATAOUT18
+rd[19] <= RAM.DATAOUT19
+rd[20] <= RAM.DATAOUT20
+rd[21] <= RAM.DATAOUT21
+rd[22] <= RAM.DATAOUT22
+rd[23] <= RAM.DATAOUT23
+rd[24] <= RAM.DATAOUT24
+rd[25] <= RAM.DATAOUT25
+rd[26] <= RAM.DATAOUT26
+rd[27] <= RAM.DATAOUT27
+rd[28] <= RAM.DATAOUT28
+rd[29] <= RAM.DATAOUT29
+rd[30] <= RAM.DATAOUT30
+rd[31] <= RAM.DATAOUT31
+
+
+|testbench|arm:dut|datapath:dp|pipeFD:pipelineFD
+clk => InstrD[0]~reg0.CLK
+clk => InstrD[1]~reg0.CLK
+clk => InstrD[2]~reg0.CLK
+clk => InstrD[3]~reg0.CLK
+clk => InstrD[4]~reg0.CLK
+clk => InstrD[5]~reg0.CLK
+clk => InstrD[6]~reg0.CLK
+clk => InstrD[7]~reg0.CLK
+clk => InstrD[8]~reg0.CLK
+clk => InstrD[9]~reg0.CLK
+clk => InstrD[10]~reg0.CLK
+clk => InstrD[11]~reg0.CLK
+clk => InstrD[12]~reg0.CLK
+clk => InstrD[13]~reg0.CLK
+clk => InstrD[14]~reg0.CLK
+clk => InstrD[15]~reg0.CLK
+clk => InstrD[16]~reg0.CLK
+clk => InstrD[17]~reg0.CLK
+clk => InstrD[18]~reg0.CLK
+clk => InstrD[19]~reg0.CLK
+clk => InstrD[20]~reg0.CLK
+clk => InstrD[21]~reg0.CLK
+clk => InstrD[22]~reg0.CLK
+clk => InstrD[23]~reg0.CLK
+clk => InstrD[24]~reg0.CLK
+clk => InstrD[25]~reg0.CLK
+clk => InstrD[26]~reg0.CLK
+clk => InstrD[27]~reg0.CLK
+clk => InstrD[28]~reg0.CLK
+clk => InstrD[29]~reg0.CLK
+clk => InstrD[30]~reg0.CLK
+clk => InstrD[31]~reg0.CLK
+InstrF[0] => InstrD[0]~reg0.DATAIN
+InstrF[1] => InstrD[1]~reg0.DATAIN
+InstrF[2] => InstrD[2]~reg0.DATAIN
+InstrF[3] => InstrD[3]~reg0.DATAIN
+InstrF[4] => InstrD[4]~reg0.DATAIN
+InstrF[5] => InstrD[5]~reg0.DATAIN
+InstrF[6] => InstrD[6]~reg0.DATAIN
+InstrF[7] => InstrD[7]~reg0.DATAIN
+InstrF[8] => InstrD[8]~reg0.DATAIN
+InstrF[9] => InstrD[9]~reg0.DATAIN
+InstrF[10] => InstrD[10]~reg0.DATAIN
+InstrF[11] => InstrD[11]~reg0.DATAIN
+InstrF[12] => InstrD[12]~reg0.DATAIN
+InstrF[13] => InstrD[13]~reg0.DATAIN
+InstrF[14] => InstrD[14]~reg0.DATAIN
+InstrF[15] => InstrD[15]~reg0.DATAIN
+InstrF[16] => InstrD[16]~reg0.DATAIN
+InstrF[17] => InstrD[17]~reg0.DATAIN
+InstrF[18] => InstrD[18]~reg0.DATAIN
+InstrF[19] => InstrD[19]~reg0.DATAIN
+InstrF[20] => InstrD[20]~reg0.DATAIN
+InstrF[21] => InstrD[21]~reg0.DATAIN
+InstrF[22] => InstrD[22]~reg0.DATAIN
+InstrF[23] => InstrD[23]~reg0.DATAIN
+InstrF[24] => InstrD[24]~reg0.DATAIN
+InstrF[25] => InstrD[25]~reg0.DATAIN
+InstrF[26] => InstrD[26]~reg0.DATAIN
+InstrF[27] => InstrD[27]~reg0.DATAIN
+InstrF[28] => InstrD[28]~reg0.DATAIN
+InstrF[29] => InstrD[29]~reg0.DATAIN
+InstrF[30] => InstrD[30]~reg0.DATAIN
+InstrF[31] => InstrD[31]~reg0.DATAIN
+InstrD[0] <= InstrD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[1] <= InstrD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[2] <= InstrD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[3] <= InstrD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[4] <= InstrD[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[5] <= InstrD[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[6] <= InstrD[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[7] <= InstrD[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[8] <= InstrD[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[9] <= InstrD[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[10] <= InstrD[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[11] <= InstrD[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[12] <= InstrD[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[13] <= InstrD[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[14] <= InstrD[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[15] <= InstrD[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[16] <= InstrD[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[17] <= InstrD[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[18] <= InstrD[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[19] <= InstrD[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[20] <= InstrD[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[21] <= InstrD[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[22] <= InstrD[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[23] <= InstrD[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[24] <= InstrD[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[25] <= InstrD[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[26] <= InstrD[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[27] <= InstrD[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[28] <= InstrD[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[29] <= InstrD[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[30] <= InstrD[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+InstrD[31] <= InstrD[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|testbench|arm:dut|datapath:dp|mux2:ra1mux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1238,7 +1011,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|mux2:ra2mux
+|testbench|arm:dut|datapath:dp|mux2:ra2mux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -1257,7 +1030,7 @@ y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|extend:ext
+|testbench|arm:dut|datapath:dp|extend:ext
 Instr[0] => ExtImm.DATAB
 Instr[0] => ExtImm.DATAA
 Instr[1] => ExtImm.DATAB
@@ -1300,42 +1073,42 @@ Instr[23] => ExtImm.DATAB
 Instr[23] => ExtImm.DATAB
 Instr[23] => ExtImm.DATAB
 Instr[23] => ExtImm.DATAB
-ImmSrc[0] => Mux0.IN5
-ImmSrc[0] => Mux1.IN5
-ImmSrc[0] => Mux2.IN5
-ImmSrc[0] => Mux3.IN5
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => Mux0.IN4
-ImmSrc[1] => Mux1.IN4
-ImmSrc[1] => Mux2.IN4
-ImmSrc[1] => Mux3.IN4
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
-ImmSrc[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[0] => Mux0.IN5
+ImmSrcD[0] => Mux1.IN5
+ImmSrcD[0] => Mux2.IN5
+ImmSrcD[0] => Mux3.IN5
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => Mux0.IN4
+ImmSrcD[1] => Mux1.IN4
+ImmSrcD[1] => Mux2.IN4
+ImmSrcD[1] => Mux3.IN4
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
+ImmSrcD[1] => ExtImm.OUTPUTSELECT
 ExtImm[0] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 ExtImm[1] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 ExtImm[2] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
@@ -1370,7 +1143,7 @@ ExtImm[30] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 ExtImm[31] <= ExtImm.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|regfile:rf
+|testbench|arm:dut|datapath:dp|regfile:rf
 clk => rf.we_a.CLK
 clk => rf.waddr_a[3].CLK
 clk => rf.waddr_a[2].CLK
@@ -1427,14 +1200,14 @@ ra2[2] => Equal1.IN1
 ra2[2] => rf.PORTBRADDR2
 ra2[3] => Equal1.IN0
 ra2[3] => rf.PORTBRADDR3
-wa3[0] => rf.waddr_a[0].DATAIN
-wa3[0] => rf.WADDR
-wa3[1] => rf.waddr_a[1].DATAIN
-wa3[1] => rf.WADDR1
-wa3[2] => rf.waddr_a[2].DATAIN
-wa3[2] => rf.WADDR2
-wa3[3] => rf.waddr_a[3].DATAIN
-wa3[3] => rf.WADDR3
+ra3[0] => rf.waddr_a[0].DATAIN
+ra3[0] => rf.WADDR
+ra3[1] => rf.waddr_a[1].DATAIN
+ra3[1] => rf.WADDR1
+ra3[2] => rf.waddr_a[2].DATAIN
+ra3[2] => rf.WADDR2
+ra3[3] => rf.waddr_a[3].DATAIN
+ra3[3] => rf.WADDR3
 wd3[0] => rf.data_a[0].DATAIN
 wd3[0] => rf.DATAIN
 wd3[1] => rf.data_a[1].DATAIN
@@ -1629,39 +1402,25 @@ rd2[30] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 rd2[31] <= rd2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|pipeDE:pipelineDE
-clk => resultD[0]~reg0.CLK
-clk => resultD[1]~reg0.CLK
-clk => resultD[2]~reg0.CLK
-clk => resultD[3]~reg0.CLK
-clk => resultD[4]~reg0.CLK
-clk => resultD[5]~reg0.CLK
-clk => resultD[6]~reg0.CLK
-clk => resultD[7]~reg0.CLK
-clk => resultD[8]~reg0.CLK
-clk => resultD[9]~reg0.CLK
-clk => resultD[10]~reg0.CLK
-clk => resultD[11]~reg0.CLK
-clk => resultD[12]~reg0.CLK
-clk => resultD[13]~reg0.CLK
-clk => resultD[14]~reg0.CLK
-clk => resultD[15]~reg0.CLK
-clk => resultD[16]~reg0.CLK
-clk => resultD[17]~reg0.CLK
-clk => resultD[18]~reg0.CLK
-clk => resultD[19]~reg0.CLK
-clk => resultD[20]~reg0.CLK
-clk => resultD[21]~reg0.CLK
-clk => resultD[22]~reg0.CLK
-clk => resultD[23]~reg0.CLK
-clk => resultD[24]~reg0.CLK
-clk => resultD[25]~reg0.CLK
-clk => resultD[26]~reg0.CLK
-clk => resultD[27]~reg0.CLK
-clk => resultD[28]~reg0.CLK
-clk => resultD[29]~reg0.CLK
-clk => resultD[30]~reg0.CLK
-clk => resultD[31]~reg0.CLK
+|testbench|arm:dut|datapath:dp|pipeDE:pipelineDE
+clk => condE[0]~reg0.CLK
+clk => condE[1]~reg0.CLK
+clk => condE[2]~reg0.CLK
+clk => condE[3]~reg0.CLK
+clk => BranchE~reg0.CLK
+clk => FlagWriteE[0]~reg0.CLK
+clk => FlagWriteE[1]~reg0.CLK
+clk => PCSrcE~reg0.CLK
+clk => MemWriteE~reg0.CLK
+clk => MemtoRegE~reg0.CLK
+clk => ALUControlE[0]~reg0.CLK
+clk => ALUControlE[1]~reg0.CLK
+clk => ALUSrcE~reg0.CLK
+clk => regWriteE~reg0.CLK
+clk => WA3E[0]~reg0.CLK
+clk => WA3E[1]~reg0.CLK
+clk => WA3E[2]~reg0.CLK
+clk => WA3E[3]~reg0.CLK
 clk => ExtendE[0]~reg0.CLK
 clk => ExtendE[1]~reg0.CLK
 clk => ExtendE[2]~reg0.CLK
@@ -1854,38 +1613,24 @@ ExtendD[28] => ExtendE[28]~reg0.DATAIN
 ExtendD[29] => ExtendE[29]~reg0.DATAIN
 ExtendD[30] => ExtendE[30]~reg0.DATAIN
 ExtendD[31] => ExtendE[31]~reg0.DATAIN
-resultE[0] => resultD[0]~reg0.DATAIN
-resultE[1] => resultD[1]~reg0.DATAIN
-resultE[2] => resultD[2]~reg0.DATAIN
-resultE[3] => resultD[3]~reg0.DATAIN
-resultE[4] => resultD[4]~reg0.DATAIN
-resultE[5] => resultD[5]~reg0.DATAIN
-resultE[6] => resultD[6]~reg0.DATAIN
-resultE[7] => resultD[7]~reg0.DATAIN
-resultE[8] => resultD[8]~reg0.DATAIN
-resultE[9] => resultD[9]~reg0.DATAIN
-resultE[10] => resultD[10]~reg0.DATAIN
-resultE[11] => resultD[11]~reg0.DATAIN
-resultE[12] => resultD[12]~reg0.DATAIN
-resultE[13] => resultD[13]~reg0.DATAIN
-resultE[14] => resultD[14]~reg0.DATAIN
-resultE[15] => resultD[15]~reg0.DATAIN
-resultE[16] => resultD[16]~reg0.DATAIN
-resultE[17] => resultD[17]~reg0.DATAIN
-resultE[18] => resultD[18]~reg0.DATAIN
-resultE[19] => resultD[19]~reg0.DATAIN
-resultE[20] => resultD[20]~reg0.DATAIN
-resultE[21] => resultD[21]~reg0.DATAIN
-resultE[22] => resultD[22]~reg0.DATAIN
-resultE[23] => resultD[23]~reg0.DATAIN
-resultE[24] => resultD[24]~reg0.DATAIN
-resultE[25] => resultD[25]~reg0.DATAIN
-resultE[26] => resultD[26]~reg0.DATAIN
-resultE[27] => resultD[27]~reg0.DATAIN
-resultE[28] => resultD[28]~reg0.DATAIN
-resultE[29] => resultD[29]~reg0.DATAIN
-resultE[30] => resultD[30]~reg0.DATAIN
-resultE[31] => resultD[31]~reg0.DATAIN
+WA3D[0] => WA3E[0]~reg0.DATAIN
+WA3D[1] => WA3E[1]~reg0.DATAIN
+WA3D[2] => WA3E[2]~reg0.DATAIN
+WA3D[3] => WA3E[3]~reg0.DATAIN
+condD[0] => condE[0]~reg0.DATAIN
+condD[1] => condE[1]~reg0.DATAIN
+condD[2] => condE[2]~reg0.DATAIN
+condD[3] => condE[3]~reg0.DATAIN
+regWriteD => regWriteE~reg0.DATAIN
+ALUSrcD => ALUSrcE~reg0.DATAIN
+MemtoRegD => MemtoRegE~reg0.DATAIN
+MemWriteD => MemWriteE~reg0.DATAIN
+PCSrcD => PCSrcE~reg0.DATAIN
+BranchD => BranchE~reg0.DATAIN
+ALUControlD[0] => ALUControlE[0]~reg0.DATAIN
+ALUControlD[1] => ALUControlE[1]~reg0.DATAIN
+FlagWriteD[0] => FlagWriteE[0]~reg0.DATAIN
+FlagWriteD[1] => FlagWriteE[1]~reg0.DATAIN
 RD1E[0] <= RD1E[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RD1E[1] <= RD1E[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RD1E[2] <= RD1E[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1982,41 +1727,27 @@ ExtendE[28] <= ExtendE[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ExtendE[29] <= ExtendE[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ExtendE[30] <= ExtendE[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ExtendE[31] <= ExtendE[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[0] <= resultD[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[1] <= resultD[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[2] <= resultD[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[3] <= resultD[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[4] <= resultD[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[5] <= resultD[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[6] <= resultD[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[7] <= resultD[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[8] <= resultD[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[9] <= resultD[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[10] <= resultD[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[11] <= resultD[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[12] <= resultD[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[13] <= resultD[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[14] <= resultD[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[15] <= resultD[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[16] <= resultD[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[17] <= resultD[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[18] <= resultD[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[19] <= resultD[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[20] <= resultD[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[21] <= resultD[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[22] <= resultD[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[23] <= resultD[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[24] <= resultD[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[25] <= resultD[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[26] <= resultD[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[27] <= resultD[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[28] <= resultD[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[29] <= resultD[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[30] <= resultD[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultD[31] <= resultD[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3E[0] <= WA3E[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3E[1] <= WA3E[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3E[2] <= WA3E[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3E[3] <= WA3E[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+condE[0] <= condE[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+condE[1] <= condE[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+condE[2] <= condE[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+condE[3] <= condE[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+regWriteE <= regWriteE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALUSrcE <= ALUSrcE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MemtoRegE <= MemtoRegE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MemWriteE <= MemWriteE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCSrcE <= PCSrcE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+BranchE <= BranchE~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALUControlE[0] <= ALUControlE[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ALUControlE[1] <= ALUControlE[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+FlagWriteE[0] <= FlagWriteE[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+FlagWriteE[1] <= FlagWriteE[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|mux2:srcbmux
+|testbench|arm:dut|datapath:dp|mux2:srcbmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA
@@ -2147,7 +1878,7 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu
+|testbench|arm:dut|datapath:dp|alu:alu
 a[0] => a[0].IN4
 a[1] => a[1].IN4
 a[2] => a[2].IN4
@@ -2252,7 +1983,7 @@ Flags[2] <= zeroFlag:zf.port1
 Flags[3] <= negativeFlag:nf.port2
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -2351,199 +2082,199 @@ y[30] <= andOneBit:forloop[30].andO.port2
 y[31] <= andOneBit:forloop[31].andO.port2
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[0].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[0].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[1].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[1].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[2].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[2].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[3].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[3].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[4].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[4].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[5].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[5].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[6].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[6].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[7].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[7].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[8].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[8].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[9].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[9].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[10].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[10].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[11].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[11].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[12].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[12].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[13].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[13].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[14].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[14].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[15].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[15].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[16].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[16].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[17].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[17].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[18].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[18].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[19].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[19].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[20].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[20].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[21].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[21].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[22].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[22].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[23].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[23].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[24].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[24].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[25].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[25].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[26].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[26].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[27].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[27].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[28].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[28].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[29].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[29].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[30].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[30].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[31].andO
+|testbench|arm:dut|datapath:dp|alu:alu|andNBits:AND|andOneBit:forloop[31].andO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -2642,199 +2373,199 @@ y[30] <= orOneBit:forloop[30].orO.port2
 y[31] <= orOneBit:forloop[31].orO.port2
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[0].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[0].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[1].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[1].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[2].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[2].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[3].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[3].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[4].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[4].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[5].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[5].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[6].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[6].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[7].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[7].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[8].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[8].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[9].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[9].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[10].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[10].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[11].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[11].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[12].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[12].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[13].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[13].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[14].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[14].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[15].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[15].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[16].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[16].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[17].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[17].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[18].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[18].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[19].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[19].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[20].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[20].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[21].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[21].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[22].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[22].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[23].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[23].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[24].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[24].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[25].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[25].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[26].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[26].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[27].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[27].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[28].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[28].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[29].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[29].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[30].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[30].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[31].orO
+|testbench|arm:dut|datapath:dp|alu:alu|orNBits:OR|orOneBit:forloop[31].orO
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD
 cin => cin.IN1
 a[0] => a[0].IN1
 a[1] => a[1].IN1
@@ -2966,7 +2697,7 @@ cout[30] <= cout[30].DB_MAX_OUTPUT_PORT_TYPE
 cout[31] <= addOneBit:loop[31].addO.port4
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -2974,37 +2705,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3012,37 +2743,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[1].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3050,37 +2781,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[2].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3088,37 +2819,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[3].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3126,37 +2857,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[4].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3164,37 +2895,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[5].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3202,37 +2933,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[6].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3240,37 +2971,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[7].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3278,37 +3009,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[8].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3316,37 +3047,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[9].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3354,37 +3085,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[10].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3392,37 +3123,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[11].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3430,37 +3161,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[12].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3468,37 +3199,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[13].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3506,37 +3237,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[14].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3544,37 +3275,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[15].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3582,37 +3313,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[16].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3620,37 +3351,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[17].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3658,37 +3389,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[18].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3696,37 +3427,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[19].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3734,37 +3465,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[20].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3772,37 +3503,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[21].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3810,37 +3541,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[22].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3848,37 +3579,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[23].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3886,37 +3617,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[24].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3924,37 +3655,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[25].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -3962,37 +3693,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[26].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -4000,37 +3731,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[27].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -4038,37 +3769,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[28].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -4076,37 +3807,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[29].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -4114,37 +3845,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[30].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO
 cin => cin.IN2
 a => a.IN2
 b => b.IN2
@@ -4152,37 +3883,37 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|addNBits:ADD|addOneBit:loop[31].addO|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB
 cin => cin.IN1
 a[0] => a[0].IN1
 a[1] => a[1].IN1
@@ -4314,7 +4045,7 @@ cout[30] <= cout[30].DB_MAX_OUTPUT_PORT_TYPE
 cout[31] <= subtractOneBit:loop[31].subo.port4
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4322,42 +4053,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4365,42 +4096,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[1].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4408,42 +4139,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[2].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4451,42 +4182,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[3].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4494,42 +4225,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[4].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4537,42 +4268,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[5].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4580,42 +4311,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[6].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4623,42 +4354,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[7].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4666,42 +4397,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[8].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4709,42 +4440,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[9].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4752,42 +4483,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[10].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4795,42 +4526,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[11].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4838,42 +4569,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[12].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4881,42 +4612,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[13].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4924,42 +4655,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[14].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -4967,42 +4698,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[15].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5010,42 +4741,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[16].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5053,42 +4784,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[17].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5096,42 +4827,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[18].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5139,42 +4870,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[19].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5182,42 +4913,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[20].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5225,42 +4956,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[21].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5268,42 +4999,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[22].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5311,42 +5042,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[23].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5354,42 +5085,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[24].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5397,42 +5128,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[25].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5440,42 +5171,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[26].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5483,42 +5214,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[27].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5526,42 +5257,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[28].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5569,42 +5300,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[29].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5612,42 +5343,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[30].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo
 cin => cin.IN2
 a => a.IN2
 b => b.IN1
@@ -5655,42 +5386,42 @@ sum <= xorOneBit:xors.port2
 cout <= orOneBit:orCo.port2
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|notOneBit:notOn
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|notOneBit:notOn
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|xorOneBit:xorp
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|xorOneBit:xorp
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|andOneBit:andg
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|andOneBit:andg
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|andOneBit:andc
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|andOneBit:andc
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|xorOneBit:xors
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|xorOneBit:xors
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|orOneBit:orCo
+|testbench|arm:dut|datapath:dp|alu:alu|subtractNBits:SUB|subtractOneBit:loop[31].subo|orOneBit:orCo
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|mux4x1:MUX
+|testbench|arm:dut|datapath:dp|alu:alu|mux4x1:MUX
 d0[0] => t1[0].DATAA
 d0[1] => t1[1].DATAA
 d0[2] => t1[2].DATAA
@@ -5949,7 +5680,7 @@ y[30] <= t2.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= t2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|zeroFlag:zf
+|testbench|arm:dut|datapath:dp|alu:alu|zeroFlag:zf
 data[0] => Equal0.IN31
 data[1] => Equal0.IN30
 data[2] => Equal0.IN29
@@ -5985,7 +5716,7 @@ data[31] => Equal0.IN0
 Z <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|negativeFlag:nf
+|testbench|arm:dut|datapath:dp|alu:alu|negativeFlag:nf
 s[0] => always0.IN0
 s[1] => always0.IN1
 data[0] => ~NO_FANOUT~
@@ -6023,7 +5754,7 @@ data[31] => N.DATAB
 N <= N.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|carryFlag:cf
+|testbench|arm:dut|datapath:dp|alu:alu|carryFlag:cf
 s[0] => always0.IN0
 s[0] => always0.IN0
 s[1] => always0.IN1
@@ -6095,7 +5826,7 @@ TempCoutSub[31] => C.DATAB
 C <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf
 a => tempA.IN2
 b => tempB.IN1
 sum => sum.IN1
@@ -6104,79 +5835,55 @@ s[1] => s[1].IN1
 y <= andOneBit:AND2.port2
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorC1
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorC1
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorC2
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorC2
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|notOneBit:notXor
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|notOneBit:notXor
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorSum
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|xorOneBit:xorSum
 a => y.IN0
 b => y.IN1
 y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|notOneBit:notALUControl
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|notOneBit:notALUControl
 a => y.DATAIN
 y <= a.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|andOneBit:AND1
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|andOneBit:AND1
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|alu:alu|overflowFlag:vf|andOneBit:AND2
+|testbench|arm:dut|datapath:dp|alu:alu|overflowFlag:vf|andOneBit:AND2
 a => result.IN0
 b => result.IN1
 result <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|pipeEM:pipelineEM
-clk => resultE[0]~reg0.CLK
-clk => resultE[1]~reg0.CLK
-clk => resultE[2]~reg0.CLK
-clk => resultE[3]~reg0.CLK
-clk => resultE[4]~reg0.CLK
-clk => resultE[5]~reg0.CLK
-clk => resultE[6]~reg0.CLK
-clk => resultE[7]~reg0.CLK
-clk => resultE[8]~reg0.CLK
-clk => resultE[9]~reg0.CLK
-clk => resultE[10]~reg0.CLK
-clk => resultE[11]~reg0.CLK
-clk => resultE[12]~reg0.CLK
-clk => resultE[13]~reg0.CLK
-clk => resultE[14]~reg0.CLK
-clk => resultE[15]~reg0.CLK
-clk => resultE[16]~reg0.CLK
-clk => resultE[17]~reg0.CLK
-clk => resultE[18]~reg0.CLK
-clk => resultE[19]~reg0.CLK
-clk => resultE[20]~reg0.CLK
-clk => resultE[21]~reg0.CLK
-clk => resultE[22]~reg0.CLK
-clk => resultE[23]~reg0.CLK
-clk => resultE[24]~reg0.CLK
-clk => resultE[25]~reg0.CLK
-clk => resultE[26]~reg0.CLK
-clk => resultE[27]~reg0.CLK
-clk => resultE[28]~reg0.CLK
-clk => resultE[29]~reg0.CLK
-clk => resultE[30]~reg0.CLK
-clk => resultE[31]~reg0.CLK
+|testbench|arm:dut|datapath:dp|pipeEM:pipelineEM
+clk => PCSrcM~reg0.CLK
+clk => RegWriteM~reg0.CLK
+clk => MemWriteM~reg0.CLK
+clk => MemtoRegM~reg0.CLK
+clk => WA3M[0]~reg0.CLK
+clk => WA3M[1]~reg0.CLK
+clk => WA3M[2]~reg0.CLK
+clk => WA3M[3]~reg0.CLK
 clk => WriteDataM[0]~reg0.CLK
 clk => WriteDataM[1]~reg0.CLK
 clk => WriteDataM[2]~reg0.CLK
@@ -6305,38 +6012,14 @@ WriteDataE[28] => WriteDataM[28]~reg0.DATAIN
 WriteDataE[29] => WriteDataM[29]~reg0.DATAIN
 WriteDataE[30] => WriteDataM[30]~reg0.DATAIN
 WriteDataE[31] => WriteDataM[31]~reg0.DATAIN
-resultM[0] => resultE[0]~reg0.DATAIN
-resultM[1] => resultE[1]~reg0.DATAIN
-resultM[2] => resultE[2]~reg0.DATAIN
-resultM[3] => resultE[3]~reg0.DATAIN
-resultM[4] => resultE[4]~reg0.DATAIN
-resultM[5] => resultE[5]~reg0.DATAIN
-resultM[6] => resultE[6]~reg0.DATAIN
-resultM[7] => resultE[7]~reg0.DATAIN
-resultM[8] => resultE[8]~reg0.DATAIN
-resultM[9] => resultE[9]~reg0.DATAIN
-resultM[10] => resultE[10]~reg0.DATAIN
-resultM[11] => resultE[11]~reg0.DATAIN
-resultM[12] => resultE[12]~reg0.DATAIN
-resultM[13] => resultE[13]~reg0.DATAIN
-resultM[14] => resultE[14]~reg0.DATAIN
-resultM[15] => resultE[15]~reg0.DATAIN
-resultM[16] => resultE[16]~reg0.DATAIN
-resultM[17] => resultE[17]~reg0.DATAIN
-resultM[18] => resultE[18]~reg0.DATAIN
-resultM[19] => resultE[19]~reg0.DATAIN
-resultM[20] => resultE[20]~reg0.DATAIN
-resultM[21] => resultE[21]~reg0.DATAIN
-resultM[22] => resultE[22]~reg0.DATAIN
-resultM[23] => resultE[23]~reg0.DATAIN
-resultM[24] => resultE[24]~reg0.DATAIN
-resultM[25] => resultE[25]~reg0.DATAIN
-resultM[26] => resultE[26]~reg0.DATAIN
-resultM[27] => resultE[27]~reg0.DATAIN
-resultM[28] => resultE[28]~reg0.DATAIN
-resultM[29] => resultE[29]~reg0.DATAIN
-resultM[30] => resultE[30]~reg0.DATAIN
-resultM[31] => resultE[31]~reg0.DATAIN
+WA3E[0] => WA3M[0]~reg0.DATAIN
+WA3E[1] => WA3M[1]~reg0.DATAIN
+WA3E[2] => WA3M[2]~reg0.DATAIN
+WA3E[3] => WA3M[3]~reg0.DATAIN
+MemtoRegE => MemtoRegM~reg0.DATAIN
+PCSrc => PCSrcM~reg0.DATAIN
+RegWrite => RegWriteM~reg0.DATAIN
+MemWrite => MemWriteM~reg0.DATAIN
 ALUOutM[0] <= ALUOutM[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOutM[1] <= ALUOutM[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOutM[2] <= ALUOutM[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -6401,41 +6084,17 @@ WriteDataM[28] <= WriteDataM[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 WriteDataM[29] <= WriteDataM[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 WriteDataM[30] <= WriteDataM[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 WriteDataM[31] <= WriteDataM[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[0] <= resultE[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[1] <= resultE[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[2] <= resultE[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[3] <= resultE[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[4] <= resultE[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[5] <= resultE[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[6] <= resultE[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[7] <= resultE[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[8] <= resultE[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[9] <= resultE[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[10] <= resultE[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[11] <= resultE[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[12] <= resultE[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[13] <= resultE[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[14] <= resultE[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[15] <= resultE[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[16] <= resultE[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[17] <= resultE[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[18] <= resultE[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[19] <= resultE[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[20] <= resultE[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[21] <= resultE[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[22] <= resultE[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[23] <= resultE[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[24] <= resultE[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[25] <= resultE[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[26] <= resultE[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[27] <= resultE[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[28] <= resultE[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[29] <= resultE[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[30] <= resultE[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultE[31] <= resultE[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3M[0] <= WA3M[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3M[1] <= WA3M[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3M[2] <= WA3M[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3M[3] <= WA3M[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MemtoRegM <= MemtoRegM~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCSrcM <= PCSrcM~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RegWriteM <= RegWriteM~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MemWriteM <= MemWriteM~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|dmem:dmem
+|testbench|arm:dut|datapath:dp|dmem:dmem
 clk => RAM.we_a.CLK
 clk => RAM.waddr_a[5].CLK
 clk => RAM.waddr_a[4].CLK
@@ -6620,7 +6279,14 @@ rd[30] <= RAM.DATAOUT30
 rd[31] <= RAM.DATAOUT31
 
 
-|arm|datapath:dp|pipeMW:pipelineMW
+|testbench|arm:dut|datapath:dp|pipeMW:pipelineMW
+clk => RegWriteW~reg0.CLK
+clk => PCSrcW~reg0.CLK
+clk => MemtoRegW~reg0.CLK
+clk => WA3W[0]~reg0.CLK
+clk => WA3W[1]~reg0.CLK
+clk => WA3W[2]~reg0.CLK
+clk => WA3W[3]~reg0.CLK
 clk => ALUOutW[0]~reg0.CLK
 clk => ALUOutW[1]~reg0.CLK
 clk => ALUOutW[2]~reg0.CLK
@@ -6749,38 +6415,13 @@ ALUOutM[28] => ALUOutW[28]~reg0.DATAIN
 ALUOutM[29] => ALUOutW[29]~reg0.DATAIN
 ALUOutM[30] => ALUOutW[30]~reg0.DATAIN
 ALUOutM[31] => ALUOutW[31]~reg0.DATAIN
-resultW[0] => ~NO_FANOUT~
-resultW[1] => ~NO_FANOUT~
-resultW[2] => ~NO_FANOUT~
-resultW[3] => ~NO_FANOUT~
-resultW[4] => ~NO_FANOUT~
-resultW[5] => ~NO_FANOUT~
-resultW[6] => ~NO_FANOUT~
-resultW[7] => ~NO_FANOUT~
-resultW[8] => ~NO_FANOUT~
-resultW[9] => ~NO_FANOUT~
-resultW[10] => ~NO_FANOUT~
-resultW[11] => ~NO_FANOUT~
-resultW[12] => ~NO_FANOUT~
-resultW[13] => ~NO_FANOUT~
-resultW[14] => ~NO_FANOUT~
-resultW[15] => ~NO_FANOUT~
-resultW[16] => ~NO_FANOUT~
-resultW[17] => ~NO_FANOUT~
-resultW[18] => ~NO_FANOUT~
-resultW[19] => ~NO_FANOUT~
-resultW[20] => ~NO_FANOUT~
-resultW[21] => ~NO_FANOUT~
-resultW[22] => ~NO_FANOUT~
-resultW[23] => ~NO_FANOUT~
-resultW[24] => ~NO_FANOUT~
-resultW[25] => ~NO_FANOUT~
-resultW[26] => ~NO_FANOUT~
-resultW[27] => ~NO_FANOUT~
-resultW[28] => ~NO_FANOUT~
-resultW[29] => ~NO_FANOUT~
-resultW[30] => ~NO_FANOUT~
-resultW[31] => ~NO_FANOUT~
+WA3M[0] => WA3W[0]~reg0.DATAIN
+WA3M[1] => WA3W[1]~reg0.DATAIN
+WA3M[2] => WA3W[2]~reg0.DATAIN
+WA3M[3] => WA3W[3]~reg0.DATAIN
+MemtoRegM => MemtoRegW~reg0.DATAIN
+PCSrcM => PCSrcW~reg0.DATAIN
+RegWriteM => RegWriteW~reg0.DATAIN
 ReadDataW[0] <= ReadDataW[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ReadDataW[1] <= ReadDataW[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ReadDataW[2] <= ReadDataW[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -6845,41 +6486,16 @@ ALUOutW[28] <= ALUOutW[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOutW[29] <= ALUOutW[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOutW[30] <= ALUOutW[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 ALUOutW[31] <= ALUOutW[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-resultM[0] <= <GND>
-resultM[1] <= <GND>
-resultM[2] <= <GND>
-resultM[3] <= <GND>
-resultM[4] <= <GND>
-resultM[5] <= <GND>
-resultM[6] <= <GND>
-resultM[7] <= <GND>
-resultM[8] <= <GND>
-resultM[9] <= <GND>
-resultM[10] <= <GND>
-resultM[11] <= <GND>
-resultM[12] <= <GND>
-resultM[13] <= <GND>
-resultM[14] <= <GND>
-resultM[15] <= <GND>
-resultM[16] <= <GND>
-resultM[17] <= <GND>
-resultM[18] <= <GND>
-resultM[19] <= <GND>
-resultM[20] <= <GND>
-resultM[21] <= <GND>
-resultM[22] <= <GND>
-resultM[23] <= <GND>
-resultM[24] <= <GND>
-resultM[25] <= <GND>
-resultM[26] <= <GND>
-resultM[27] <= <GND>
-resultM[28] <= <GND>
-resultM[29] <= <GND>
-resultM[30] <= <GND>
-resultM[31] <= <GND>
+WA3W[0] <= WA3W[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3W[1] <= WA3W[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3W[2] <= WA3W[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+WA3W[3] <= WA3W[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+MemtoRegW <= MemtoRegW~reg0.DB_MAX_OUTPUT_PORT_TYPE
+PCSrcW <= PCSrcW~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RegWriteW <= RegWriteW~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|arm|datapath:dp|mux2:resmux
+|testbench|arm:dut|datapath:dp|mux2:resmux
 d0[0] => y.DATAA
 d0[1] => y.DATAA
 d0[2] => y.DATAA

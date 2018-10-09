@@ -8,7 +8,9 @@ module controller(input logic	clk,reset,PCSrcE,RegWriteE,MemWriteE,BranchE,
 						output logic ALUSrcD,
 						output logic [1:0] ALUControlD,
 						output logic MemWriteD, MemtoRegD,
-						output logic PCSrcD, FlagWriteD, BranchD, PCSrc,RegWrite,MemWrite,
+						output logic PCSrcD, 
+						output logic [1:0] FlagWriteD,
+						output logic BranchD, PCSrc,RegWrite,MemWrite,
 						input logic [1:0] FlagWriteE);
 	logic	[1:0]	FlagW;
 	logic			PCS, RegW, MemW;

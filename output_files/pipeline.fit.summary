@@ -1,17 +1,17 @@
-Fitter Status : Successful - Fri Sep 28 11:00:55 2018
-Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Fitter Status : Successful - Tue Oct 09 02:18:18 2018
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : arm
 Family : Cyclone IV GX
 Device : EP4CGX30CF23C6
 Timing Models : Final
-Total logic elements : 0 / 29,440 ( 0 % )
-    Total combinational functions : 0 / 29,440 ( 0 % )
-    Dedicated logic registers : 0 / 29,440 ( 0 % )
-Total registers : 0
+Total logic elements : 547 / 29,440 ( 2 % )
+    Total combinational functions : 460 / 29,440 ( 2 % )
+    Dedicated logic registers : 339 / 29,440 ( 1 % )
+Total registers : 339
 Total pins : 131 / 307 ( 43 % )
 Total virtual pins : 0
-Total memory bits : 0 / 1,105,920 ( 0 % )
+Total memory bits : 2,048 / 1,105,920 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 160 ( 0 % )
 Total GXB Receiver Channel PCS : 0 / 4 ( 0 % )
 Total GXB Receiver Channel PMA : 0 / 4 ( 0 % )

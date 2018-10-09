@@ -16,15 +16,18 @@ module datapath (input		logic				clk,reset,
 						input logic [1:0] FlagWriteD);
 						
 	logic	[31:0]	PCPlus4F, PCPlus4D;
-	logic	[31:0]	resultW, InstrD, RD1, RD2, ExtImm, SrcAE, SrcBE, WriteDataM,ReadDataW, ALUOutM,ALUOutW, RD;
-	logic	[3:0]		RA1D, RA2D;
+	logic	[31:0]	resultW, InstrD, RD1, RD2, ExtImm,ExtImmE, SrcAE, SrcBE, WriteDataM,ReadDataW, ALUOutM,ALUOutW, RD,PC;
+	logic	[3:0]		RA1D, RA2D,WA3W,WA3E,WA3M;
+	logic PCSrcW,RegWriteW,MemtoRegE,ALUSrcE,MemtoRegM,PCSrcM,RegWriteM,MemWriteM,MemtoRegW;
+	logic [1:0] ALUControlE;
 	
 	//FETCH
-	imem imem(PCF, InstrF);	
+	mux2	#(32)	pcmux(PCPlus4F, resultW, PCSrcW, PC);	
+	flopr	#(32)	pcreg(clk, reset, PC, PCF);	
 	adder	#(32)	pcadd1(PCF, 32'b100, PCPlus4F);
+	
+	imem imem(PCF, InstrF);
 	pipeFD pipelineFD (clk, InstrF, InstrD);
-	mux2	#(32)	pcmux(PCPlus4F, resultW, PCSrcW, PC);
-	pipePC pipelinePC (clk, PC, PCF);
 	
 	//DECODE
 	mux2	#(4)	ra1mux(InstrD[19:16], 4'b1111, RegSrcD[0], RA1D);

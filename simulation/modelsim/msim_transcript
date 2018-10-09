@@ -1,0 +1,548 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do pipeline_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:46 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 02:21:46 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:46 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 02:21:46 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:46 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condcheck.sv 
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condcheck
+# End time: 02:21:47 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:47 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 02:21:47 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:47 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/condlogic.sv 
+# -- Compiling module condlogic
+# 
+# Top level modules:
+# 	condlogic
+# End time: 02:21:47 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:47 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 02:21:48 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:48 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 02:21:48 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:48 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 02:21:48 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:48 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 02:21:49 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:49 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 02:21:49 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:49 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 02:21:50 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:50 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 02:21:50 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:50 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/zeroFlag.sv 
+# -- Compiling module zeroFlag
+# 
+# Top level modules:
+# 	zeroFlag
+# End time: 02:21:50 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:50 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/xorOneBit.sv 
+# -- Compiling module xorOneBit
+# 
+# Top level modules:
+# 	xorOneBit
+# End time: 02:21:50 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:51 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractOneBit.sv 
+# -- Compiling module subtractOneBit
+# 
+# Top level modules:
+# 	subtractOneBit
+# End time: 02:21:51 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:51 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/subtractNBits.sv 
+# -- Compiling module subtractNBits
+# 
+# Top level modules:
+# 	subtractNBits
+# End time: 02:21:51 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:51 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/overflowFlag.sv 
+# -- Compiling module overflowFlag
+# 
+# Top level modules:
+# 	overflowFlag
+# End time: 02:21:51 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:51 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orOneBit.sv 
+# -- Compiling module orOneBit
+# 
+# Top level modules:
+# 	orOneBit
+# End time: 02:21:51 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:51 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/orNBits.sv 
+# -- Compiling module orNBits
+# 
+# Top level modules:
+# 	orNBits
+# End time: 02:21:52 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:52 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/notOneBit.sv 
+# -- Compiling module notOneBit
+# 
+# Top level modules:
+# 	notOneBit
+# End time: 02:21:52 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:52 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/negativeFlag.sv 
+# -- Compiling module negativeFlag
+# 
+# Top level modules:
+# 	negativeFlag
+# End time: 02:21:52 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:52 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/mux4x1.sv 
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux4x1
+# End time: 02:21:52 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:52 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 02:21:53 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:53 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/carryFlag.sv 
+# -- Compiling module carryFlag
+# 
+# Top level modules:
+# 	carryFlag
+# End time: 02:21:53 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:53 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andOneBit.sv 
+# -- Compiling module andOneBit
+# 
+# Top level modules:
+# 	andOneBit
+# End time: 02:21:53 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:53 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/andNBits.sv 
+# -- Compiling module andNBits
+# 
+# Top level modules:
+# 	andNBits
+# End time: 02:21:53 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:53 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 02:21:54 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:54 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addOneBit.sv 
+# -- Compiling module addOneBit
+# 
+# Top level modules:
+# 	addOneBit
+# End time: 02:21:54 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:54 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/addNBits.sv 
+# -- Compiling module addNBits
+# 
+# Top level modules:
+# 	addNBits
+# End time: 02:21:54 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:54 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 02:21:54 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:54 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeDE.sv 
+# -- Compiling module pipeDE
+# 
+# Top level modules:
+# 	pipeDE
+# End time: 02:21:55 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:55 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeEM.sv 
+# -- Compiling module pipeEM
+# 
+# Top level modules:
+# 	pipeEM
+# End time: 02:21:55 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:55 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeFD.sv 
+# -- Compiling module pipeFD
+# 
+# Top level modules:
+# 	pipeFD
+# End time: 02:21:55 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:55 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/pipeMW.sv 
+# -- Compiling module pipeMW
+# 
+# Top level modules:
+# 	pipeMW
+# End time: 02:21:55 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:55 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 02:21:56 on Oct 09,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto {C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 02:21:56 on Oct 09,2018
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto" C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 02:21:56 on Oct 09,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  testARM
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" testARM 
+# Start time: 02:21:56 on Oct 09,2018
+# ** Error: (vsim-3170) Could not find 'testARM'.
+#         Searched libraries:
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/cycloneiv_hssi
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/cycloneiv_pcie_hip
+#             C:/intelFPGA_lite/18.1/modelsim_ase/altera/verilog/cycloneiv
+#             C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/simulation/modelsim/rtl_work
+#             C:/Users/CristianWindows/Desktop/proyectoArqui1GIT/PrimerProyecto/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./pipeline_run_msim_rtl_verilog.do PAUSED at line 46
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 02:21:56 on Oct 09,2018
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.imem
+# Loading work.pipeFD
+# Loading work.extend
+# Loading work.regfile
+# Loading work.pipeDE
+# Loading work.alu
+# Loading work.andNBits
+# Loading work.orNBits
+# Loading work.addNBits
+# Loading work.addOneBit
+# Loading work.xorOneBit
+# Loading work.andOneBit
+# Loading work.orOneBit
+# Loading work.subtractNBits
+# Loading work.subtractOneBit
+# Loading work.notOneBit
+# Loading work.mux4x1
+# Loading work.zeroFlag
+# Loading work.negativeFlag
+# Loading work.carryFlag
+# Loading work.overflowFlag
+# Loading work.pipeEM
+# Loading work.dmem
+# Loading work.pipeMW
+add wave -position end  sim:/testbench/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: CristianWindows  Hostname: DESKTOP-3ULDB7G  ProcessID: 9024
+#           Attempting to use alternate WLF file "./wlftkmz62b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkmz62b
+add wave -position end  sim:/testbench/reset
+add wave -position end  sim:/testbench/WriteData
+add wave -position end  sim:/testbench/PCF
+add wave -position end  sim:/testbench/InstrF
+add wave -position end  sim:/testbench/ALUResultE
+add wave -position end  sim:/testbench/MemWriteD
+run
+add wave -position end  sim:/testbench/dut/dp/RegSrcD
+add wave -position end  sim:/testbench/dut/dp/RegWriteD
+add wave -position end  sim:/testbench/dut/dp/ImmSrcD
+add wave -position end  sim:/testbench/dut/dp/ALUSrcD
+add wave -position end  sim:/testbench/dut/dp/ALUControlD
+add wave -position end  sim:/testbench/dut/dp/MemtoRegD
+add wave -position end  sim:/testbench/dut/dp/PCSrcD
+add wave -position end  sim:/testbench/dut/dp/ALUFlags
+add wave -position end  sim:/testbench/dut/dp/condE
+add wave -position end  sim:/testbench/dut/dp/PCF
+add wave -position end  sim:/testbench/dut/dp/InstrF
+add wave -position end  sim:/testbench/dut/dp/ALUResultE
+add wave -position end  sim:/testbench/dut/dp/WriteDataE
+add wave -position end  sim:/testbench/dut/dp/FlagWriteE
+add wave -position end  sim:/testbench/dut/dp/PCSrcE
+add wave -position end  sim:/testbench/dut/dp/RegWriteE
+add wave -position end  sim:/testbench/dut/dp/MemWriteE
+add wave -position end  sim:/testbench/dut/dp/BranchE
+add wave -position end  sim:/testbench/dut/dp/MemWriteD
+add wave -position end  sim:/testbench/dut/dp/BranchD
+add wave -position end  sim:/testbench/dut/dp/PCSrc
+add wave -position end  sim:/testbench/dut/dp/RegWrite
+add wave -position end  sim:/testbench/dut/dp/MemWrite
+add wave -position end  sim:/testbench/dut/dp/FlagWriteD
+add wave -position end  sim:/testbench/dut/dp/PCPlus4F
+add wave -position end  sim:/testbench/dut/dp/PCPlus4D
+add wave -position end  sim:/testbench/dut/dp/resultW
+add wave -position end  sim:/testbench/dut/dp/InstrD
+add wave -position end  sim:/testbench/dut/dp/RD1
+add wave -position end  sim:/testbench/dut/dp/RD2
+add wave -position end  sim:/testbench/dut/dp/ExtImm
+add wave -position end  sim:/testbench/dut/dp/ExtImmE
+add wave -position end  sim:/testbench/dut/dp/SrcAE
+add wave -position end  sim:/testbench/dut/dp/SrcBE
+add wave -position end  sim:/testbench/dut/dp/WriteDataM
+add wave -position end  sim:/testbench/dut/dp/ReadDataW
+add wave -position end  sim:/testbench/dut/dp/ALUOutM
+add wave -position end  sim:/testbench/dut/dp/ALUOutW
+add wave -position end  sim:/testbench/dut/dp/RD
+add wave -position end  sim:/testbench/dut/dp/PC
+add wave -position end  sim:/testbench/dut/dp/RA1D
+add wave -position end  sim:/testbench/dut/dp/RA2D
+add wave -position end  sim:/testbench/dut/dp/WA3W
+add wave -position end  sim:/testbench/dut/dp/WA3E
+add wave -position end  sim:/testbench/dut/dp/WA3M
+add wave -position end  sim:/testbench/dut/dp/PCSrcW
+add wave -position end  sim:/testbench/dut/dp/RegWriteW
+add wave -position end  sim:/testbench/dut/dp/MemtoRegE
+add wave -position end  sim:/testbench/dut/dp/ALUSrcE
+add wave -position end  sim:/testbench/dut/dp/MemtoRegM
+add wave -position end  sim:/testbench/dut/dp/PCSrcM
+add wave -position end  sim:/testbench/dut/dp/RegWriteM
+add wave -position end  sim:/testbench/dut/dp/MemWriteM
+add wave -position end  sim:/testbench/dut/dp/MemtoRegW
+add wave -position end  sim:/testbench/dut/dp/ALUControlE
+add wave -position end  sim:/testbench/dut/dp/#implicit-var#InstrD
+# Drop insertion failed: sim:/testbench/dut/dp/#implicit-var#InstrD
+# (vish-4014) No objects found matching '/testbench/dut/dp/#implicit-var#InstrD'.
+restart -f
+run
+add wave -position end sim:/testbench/dut/c/dec/*
+restart -f
+run
+restart -f
+run
+# Simulation failed
+# Simulation failed
+# Simulation failed
+add wave -position end sim:/testbench/dut/c/cl/*
+restart -f
+run
+# Simulation failed
+# Simulation failed
+# Simulation failed
+add wave -position end sim:/testbench/dut/c/*
+restart -f
+run
+# Simulation failed
+# Simulation failed
+# Simulation failed
+add wave -position end sim:/testbench/dut/dp/pcmux/*
+add wave -position end sim:/testbench/dut/dp/pcreg/*
+add wave -position end sim:/testbench/dut/dp/pcadd1/*
+add wave -position end sim:/testbench/dut/dp/imem/*
+add wave -position end sim:/testbench/dut/dp/pipelineFD/*
+add wave -position end sim:/testbench/dut/dp/ra1mux/*
+add wave -position end sim:/testbench/dut/dp/ra2mux/*
+add wave -position end sim:/testbench/dut/dp/ext/*
+add wave -position end sim:/testbench/dut/dp/ext/*
+add wave -position end sim:/testbench/dut/dp/rf/*
+add wave -position end sim:/testbench/dut/dp/pipelineDE/*
+add wave -position end sim:/testbench/dut/dp/srcbmux/*
+add wave -position end sim:/testbench/dut/dp/alu/*
+add wave -position end sim:/testbench/dut/dp/pipelineEM/*
+add wave -position end sim:/testbench/dut/dp/dmem/*
+add wave -position end sim:/testbench/dut/dp/pipelineMW/*
+add wave -position end sim:/testbench/dut/dp/resmux/*
+restart -f
+run
+# Simulation failed
+# Simulation failed
+# Simulation failed
+run
